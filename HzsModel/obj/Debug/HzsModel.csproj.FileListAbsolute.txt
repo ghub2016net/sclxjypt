@@ -1,0 +1,63 @@
+D:\HzsCms\HzsModel\bin\Debug\HzsModel.dll
+D:\HzsCms\HzsModel\bin\Debug\HzsModel.pdb
+D:\HzsCms\HzsModel\obj\Debug\ResolveAssemblyReference.cache
+D:\HzsCms\HzsModel\obj\Debug\HzsModel.dll
+D:\HzsCms\HzsModel\obj\Debug\HzsModel.pdb
+D:\HzsCms\HzsModel\bin\Debug\NewLife.Core.dll
+D:\HzsCms\HzsModel\bin\Debug\XCode.dll
+E:\wangzhan\新版合作社\HZS_SVN\HzsCms\HzsModel\bin\Debug\HzsModel.dll
+E:\wangzhan\新版合作社\HZS_SVN\HzsCms\HzsModel\bin\Debug\HzsModel.pdb
+E:\wangzhan\新版合作社\HZS_SVN\HzsCms\HzsModel\bin\Debug\NewLife.Core.dll
+E:\wangzhan\新版合作社\HZS_SVN\HzsCms\HzsModel\bin\Debug\XCode.dll
+E:\wangzhan\新版合作社\HZS_SVN\HzsCms\HzsModel\obj\Debug\ResolveAssemblyReference.cache
+E:\wangzhan\新版合作社\HZS_SVN\HzsCms\HzsModel\obj\Debug\HzsModel.dll
+E:\wangzhan\新版合作社\HZS_SVN\HzsCms\HzsModel\obj\Debug\HzsModel.pdb
+E:\wangzhan\新版合作社\HzsCms\HzsModel\bin\Debug\HzsModel.dll
+E:\wangzhan\新版合作社\HzsCms\HzsModel\bin\Debug\HzsModel.pdb
+E:\wangzhan\新版合作社\HzsCms\HzsModel\bin\Debug\NewLife.Core.dll
+E:\wangzhan\新版合作社\HzsCms\HzsModel\bin\Debug\XCode.dll
+E:\wangzhan\新版合作社\HzsCms\HzsModel\obj\Debug\ResolveAssemblyReference.cache
+E:\wangzhan\新版合作社\HzsCms\HzsModel\obj\Debug\HzsModel.dll
+E:\wangzhan\新版合作社\HzsCms\HzsModel\obj\Debug\HzsModel.pdb
+E:\NET_CODE\HZS_SVN\HzsCms\HzsModel\bin\Debug\HzsModel.dll
+E:\NET_CODE\HZS_SVN\HzsCms\HzsModel\bin\Debug\HzsModel.pdb
+E:\NET_CODE\HZS_SVN\HzsCms\HzsModel\bin\Debug\NewLife.Core.dll
+E:\NET_CODE\HZS_SVN\HzsCms\HzsModel\bin\Debug\XCode.dll
+E:\NET_CODE\HZS_SVN\HzsCms\HzsModel\obj\Debug\HzsModel.dll
+E:\NET_CODE\HZS_SVN\HzsCms\HzsModel\obj\Debug\HzsModel.pdb
+E:\NET_CODE\HZS_SVN\HzsCms\HzsModel\obj\Debug\HzsModel.csprojResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\HzsCms36\HzsCms\HzsModel\bin\Debug\HzsModel.dll
+C:\Documents and Settings\Administrator\桌面\HzsCms36\HzsCms\HzsModel\bin\Debug\HzsModel.pdb
+C:\Documents and Settings\Administrator\桌面\HzsCms36\HzsCms\HzsModel\bin\Debug\NewLife.Core.dll
+C:\Documents and Settings\Administrator\桌面\HzsCms36\HzsCms\HzsModel\bin\Debug\XCode.dll
+C:\Documents and Settings\Administrator\桌面\HzsCms36\HzsCms\HzsModel\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Administrator\桌面\HzsCms36\HzsCms\HzsModel\obj\Debug\HzsModel.dll
+C:\Documents and Settings\Administrator\桌面\HzsCms36\HzsCms\HzsModel\obj\Debug\HzsModel.pdb
+E:\wangzhan\修琨交接网站详分\合作社类网站\新合作社源码\HzsCms\HzsModel\bin\Debug\HzsModel.dll
+E:\wangzhan\修琨交接网站详分\合作社类网站\新合作社源码\HzsCms\HzsModel\bin\Debug\HzsModel.pdb
+E:\wangzhan\修琨交接网站详分\合作社类网站\新合作社源码\HzsCms\HzsModel\bin\Debug\NewLife.Core.dll
+E:\wangzhan\修琨交接网站详分\合作社类网站\新合作社源码\HzsCms\HzsModel\bin\Debug\XCode.dll
+E:\wangzhan\修琨交接网站详分\合作社类网站\新合作社源码\HzsCms\HzsModel\obj\Debug\ResolveAssemblyReference.cache
+E:\wangzhan\修琨交接网站详分\合作社类网站\新合作社源码\HzsCms\HzsModel\obj\Debug\HzsModel.dll
+E:\wangzhan\修琨交接网站详分\合作社类网站\新合作社源码\HzsCms\HzsModel\obj\Debug\HzsModel.pdb
+E:\vs2008_svn签出\秦皇岛合作社\HzsCms\HzsModel\bin\Debug\HzsModel.dll
+E:\vs2008_svn签出\秦皇岛合作社\HzsCms\HzsModel\bin\Debug\HzsModel.pdb
+E:\vs2008_svn签出\秦皇岛合作社\HzsCms\HzsModel\bin\Debug\NewLife.Core.dll
+E:\vs2008_svn签出\秦皇岛合作社\HzsCms\HzsModel\bin\Debug\XCode.dll
+E:\vs2008_svn签出\秦皇岛合作社\HzsCms\HzsModel\obj\Debug\ResolveAssemblyReference.cache
+E:\vs2008_svn签出\秦皇岛合作社\HzsCms\HzsModel\obj\Debug\HzsModel.dll
+E:\vs2008_svn签出\秦皇岛合作社\HzsCms\HzsModel\obj\Debug\HzsModel.pdb
+E:\vs2008_svn签出\四川省泸县农民专业合作社联合会\HzsCms\HzsModel\bin\Debug\HzsModel.dll
+E:\vs2008_svn签出\四川省泸县农民专业合作社联合会\HzsCms\HzsModel\bin\Debug\HzsModel.pdb
+E:\vs2008_svn签出\四川省泸县农民专业合作社联合会\HzsCms\HzsModel\bin\Debug\NewLife.Core.dll
+E:\vs2008_svn签出\四川省泸县农民专业合作社联合会\HzsCms\HzsModel\bin\Debug\XCode.dll
+E:\vs2008_svn签出\四川省泸县农民专业合作社联合会\HzsCms\HzsModel\obj\Debug\ResolveAssemblyReference.cache
+E:\vs2008_svn签出\四川省泸县农民专业合作社联合会\HzsCms\HzsModel\obj\Debug\HzsModel.dll
+E:\vs2008_svn签出\四川省泸县农民专业合作社联合会\HzsCms\HzsModel\obj\Debug\HzsModel.pdb
+E:\vs2008_svn签出\四川泸县数字农经网\HzsCms\HzsModel\bin\Debug\HzsModel.dll
+E:\vs2008_svn签出\四川泸县数字农经网\HzsCms\HzsModel\bin\Debug\HzsModel.pdb
+E:\vs2008_svn签出\四川泸县数字农经网\HzsCms\HzsModel\bin\Debug\NewLife.Core.dll
+E:\vs2008_svn签出\四川泸县数字农经网\HzsCms\HzsModel\bin\Debug\XCode.dll
+E:\vs2008_svn签出\四川泸县数字农经网\HzsCms\HzsModel\obj\Debug\ResolveAssemblyReference.cache
+E:\vs2008_svn签出\四川泸县数字农经网\HzsCms\HzsModel\obj\Debug\HzsModel.dll
+E:\vs2008_svn签出\四川泸县数字农经网\HzsCms\HzsModel\obj\Debug\HzsModel.pdb

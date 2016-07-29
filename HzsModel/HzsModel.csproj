@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{64B52458-457F-4595-913D-2E6077FFB51E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HzsModel</RootNamespace>
+    <AssemblyName>HzsModel</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualStudio.TeamSystem.Data.UnitTesting, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="NewLife.Core, Version=3.9.5008.32064, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\DLL\NewLife.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="XCode, Version=8.9.5008.32349, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\DLL\XCode.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Biz\AdminRole.Biz.cs" />
+    <Compile Include="Biz\AdminUser.Biz.cs" />
+    <Compile Include="Biz\Company.Biz.cs" />
+    <Compile Include="Biz\DM_ZZDW.Biz.cs" />
+    <Compile Include="Biz\HzsAddress.Biz.cs" />
+    <Compile Include="Biz\HzsArea.Biz.cs" />
+    <Compile Include="Biz\HzsClass.Biz.cs" />
+    <Compile Include="Biz\HzsGlory.Biz.cs" />
+    <Compile Include="Biz\HzsGrade.Biz.cs" />
+    <Compile Include="Biz\HzsUser.Biz.cs" />
+    <Compile Include="Biz\Link.Biz.cs" />
+    <Compile Include="Biz\LoginLog.Biz.cs" />
+    <Compile Include="Biz\NewsInfo.Biz.cs" />
+    <Compile Include="Biz\NewsType.Biz.cs" />
+    <Compile Include="Biz\PlacesInfo.Biz.cs" />
+    <Compile Include="Biz\SysLog.Biz.cs" />
+    <Compile Include="Biz\Trade.Biz.cs" />
+    <Compile Include="Biz\TradeConsult.Biz.cs" />
+    <Compile Include="Biz\TradeSort.Biz.cs" />
+    <Compile Include="Config\BackUpConfig.cs" />
+    <Compile Include="Config\SiteConfig.cs" />
+    <Compile Include="HZSModels\CompanyType.cs" />
+    <Compile Include="HZSModels\HzsArea.cs" />
+    <Compile Include="HZSModels\HzsClass.cs" />
+    <Compile Include="HZSModels\HzsUserJyms.cs" />
+    <Compile Include="HZSModels\HzsUserSfsjb.cs" />
+    <Compile Include="HZSModels\HzsUserType.cs" />
+    <Compile Include="HZSModels\NewsType.cs" />
+    <Compile Include="HZSModels\PlacesType.cs" />
+    <Compile Include="HZSModels\TradeSort.cs" />
+    <Compile Include="Models\AdminRole.cs" />
+    <Compile Include="Models\AdminUser.cs" />
+    <Compile Include="Models\Company.cs" />
+    <Compile Include="Models\DM_ZZDW.cs" />
+    <Compile Include="Models\HzsAddress.cs" />
+    <Compile Include="Models\HzsArea.cs" />
+    <Compile Include="Models\HzsClass.cs" />
+    <Compile Include="Models\HzsGlory.cs" />
+    <Compile Include="Models\HzsGrade.cs" />
+    <Compile Include="Models\HzsUser.cs" />
+    <Compile Include="Models\Link.cs" />
+    <Compile Include="Models\LoginLog.cs" />
+    <Compile Include="Models\NewsInfo.cs" />
+    <Compile Include="Models\NewsType.cs" />
+    <Compile Include="Models\PlacesInfo.cs" />
+    <Compile Include="Models\SysLog.cs" />
+    <Compile Include="Models\Trade.cs" />
+    <Compile Include="Models\TradeConsult.cs" />
+    <Compile Include="Models\TradeSort.cs" />
+    <Compile Include="PageData\Controls\Newsinfo_Controlcs.cs" />
+    <Compile Include="PageData\Controls\Trade_Controlcs.cs" />
+    <Compile Include="PageData\DefaultPageModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

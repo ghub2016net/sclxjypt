@@ -1,0 +1,42 @@
+﻿#Software: WebDev.WebServer
+#ProcessID: 8964
+#AppDomain: eb4301ba-1-131072325009687500
+#FileName: D:\Program Files\Common Files\Microsoft Shared\DevServer\9.0\WebDev.WebServer.EXE
+#BaseDirectory: E:\vs2008_svn签出\四川泸县数字农经网\HzsCms\HzsWeb\
+#CurrentDirectory: E:\vs2008_svn签出\四川泸县数字农经网\HzsCms
+#CommandLine: /port:12701 /path:"E:\vs2008_svn签出\四川泸县数字农经网\HzsCms\HzsWeb" /vpath:"/"
+#ApplicationType: Web
+#CLR: 2.0.50727.3662
+#OS: Windows Server 2003 Standard Service Pack 2, Administrator/SUNSOFT-821E9FB
+#Date: 2016-05-09
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+09:55:46.406 20 W - NewLife.Core v3.9.2013.0907 Build 2013-09-17 17:48:48
+09:55:46.531 20 W - NewLife.XCode v8.9.2013.0909 Build 2013-09-17 17:58:18
+09:55:46.531 20 W - [hzsweb]GetSchema("MetaDataCollections")
+09:55:46.640 20 W - [hzsweb]GetSchema("Databases", "sclxnjw")
+09:55:47.687 20 W - [hzsweb]GetSchema("Tables")
+09:55:48.984 20 W - [hzsweb]GetSchema("Columns")
+09:55:49.140 20 W - [hzsweb]GetSchema("Indexes")
+09:55:49.187 20 W - [hzsweb]GetSchema("IndexColumns")
+09:55:49.281 20 W - [hzsweb]GetSchema("DataTypes")
+09:55:49.390 20 W - select rows from sysindexes where id = object_id('AdminUser') and indid in (0,1)
+09:55:49.390 4 W - select rows from sysindexes where id = object_id('AdminUser') and indid in (0,1)
+09:55:49.437 4 W - 初始化HzsModel.Models.AdminUser数据
+09:55:49.453 4 W - 一级缓存：关闭缓存
+09:55:49.484 4 W - [hzsweb]GetSchema("ReservedWords")
+09:55:49.515 4 W - 开始检查连接[hzsweb/SqlServer]的数据库架构……
+09:55:49.562 4 W - [hzsweb]的所有实体类（19个）：SysLog,HzsGlory,HzsArea,Trade,NewsType,Link,PlacesInfo,NewsInfo,TradeConsult,HzsAddress,TradeSort,HzsGrade,Company,AdminUser,HzsUser,DM_ZZDW,AdminRole,HzsClass,LoginLog
+09:55:49.562 4 W - [hzsweb]需要检查架构的实体类（19个）：SysLog,HzsGlory,HzsArea,Trade,NewsType,Link,PlacesInfo,NewsInfo,TradeConsult,HzsAddress,TradeSort,HzsGrade,Company,AdminUser,HzsUser,DM_ZZDW,AdminRole,HzsClass,LoginLog
+09:55:49.562 4 W - hzsweb待检查表架构的实体个数：19
+09:55:49.562 4 W - [hzsweb]GetSchema("Tables")
+09:55:49.609 4 W - [hzsweb]GetSchema("Columns")
+09:55:49.625 4 W - [hzsweb]GetSchema("Indexes")
+09:55:49.640 4 W - [hzsweb]GetSchema("IndexColumns")
+09:55:49.671 4 W - 检查连接[hzsweb/SqlServer]的数据库架构耗时00:00:00.1579007
+09:55:49.671 4 W - Select * From AdminUser Order By adminid Desc
+09:55:49.828 20 W - 初始化HzsModel.Models.LoginLog数据
+09:55:49.843 20 W - SET NOCOUNT ON;Insert Into LoginLog(adminid, adminname, remark, logintime, loginip, ltype, islogin) Values(2, N'admin', N'成功.', {ts'2016-05-09 09:55:49'}, N'127.0.0.1', 1, 0);Select SCOPE_IDENTITY()
+09:55:49.843 4 W - SET NOCOUNT ON;Insert Into LoginLog(adminid, adminname, remark, logintime, loginip, ltype, islogin) Values(2, N'admin', N'成功.', {ts'2016-05-09 09:55:49'}, N'127.0.0.1', 1, 0);Select SCOPE_IDENTITY()
+09:55:50.296 4 W - select top 2 * from LoginLog where islogin=0 and ltype =1 order by id desc
+09:59:17.796 22 W - Select * From AdminUser Order By adminid Desc
+09:59:17.796 22 W - SET NOCOUNT ON;Insert Into LoginLog(adminid, adminname, remark, logintime, loginip, ltype, islogin) Values(2, N'admin', N'成功.', {ts'2016-05-09 09:59:17'}, N'127.0.0.1', 1, 0);Select SCOPE_IDENTITY()

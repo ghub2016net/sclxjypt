@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfHzsUserType xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <HzsUserType>
+        <id>1</id>
+        <tname>非会员单位</tname>
+    </HzsUserType>
+    <HzsUserType>
+        <id>2</id>
+        <tname>会员单位</tname>
+    </HzsUserType>
+    <HzsUserType>
+        <id>3</id>
+        <tname>理事单位</tname>
+    </HzsUserType>
+    <HzsUserType>
+        <id>4</id>
+        <tname>副会长单位</tname>
+    </HzsUserType>
+</ArrayOfHzsUserType>

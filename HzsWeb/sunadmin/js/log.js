@@ -1,0 +1,2 @@
+﻿document.onkeydown=function(e){if(!e)e=window.event;if((e.keyCode||e.which)==13){var obtnSearch=document.getElementById("sublogin");obtnSearch.focus()}}
+$(function(){if($.browser.msie&&$.browser.version=="6.0"){window.location.href='ie6update.htm';}$('#txtUserName').focus();$("#sublogin").click(function(){$("#loginform").ajaxSubmit({success:function(data){if(data.status=="n")$("#tipswarn").html("<span style='color:red;'>"+data.info+"</span>");else window.location.href="/sunadmin/"},url:'/AjaxLogin/Login.ashx',type:"post",dataType:"json"})})});

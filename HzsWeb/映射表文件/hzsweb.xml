@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Tables Version="8.9.5010.17466">
+  <Table Name="AdminRole" Description="管理员权限" DbType="SqlServer">
+    <Columns>
+      <Column Name="roleid" DataType="Int32" DisplayName="Roleid" />
+      <Column Name="menuid" DataType="Int32" DisplayName="Menuid" />
+      <Column Name="prmission" DataType="Int32" Description="允许权限" />
+      <Column Name="id" DataType="Int32" Identity="True" PrimaryKey="True" DisplayName="ID" />
+    </Columns>
+    <Indexes>
+      <Index Columns="menuid" />
+      <Index Name="PK__AdminRol__3213E83F36B12243" Columns="id" Unique="True" PrimaryKey="True" />
+    </Indexes>
+  </Table>
+  <Table Name="AdminUser" Description="管理员用户" DbType="SqlServer">
+    <Columns>
+      <Column Name="utype" DataType="Int16" Nullable="False" Default="1" Description="默认1" />
+      <Column Name="name" DataType="String" Nullable="False" Description="管理员名称" />
+      <Column Name="apwd" DataType="String" Nullable="False" DisplayName="Apwd" />
+      <Column Name="email" DataType="String" Length="100" DisplayName="Email" />
+      <Column Name="isdel" DataType="Int16" Nullable="False" Default="0" Description="0:默认。   1:软删除" />
+      <Column Name="addtime" DataType="DateTime" Nullable="False" Default="getdate()" Description="创建时间" />
+      <Column Name="adminid" DataType="Int32" Identity="True" PrimaryKey="True" DisplayName="主键自增ID" Description="主键 自增ID" />
+    </Columns>
+    <Indexes>
+      <Index Name="PK__AdminUse__AD040D7E173876EA" Columns="adminid" Unique="True" PrimaryKey="True" />
+    </Indexes>
+  </Table>
+  <Table Name="Company" Description="合作社新闻展示表" DbType="SqlServer">
+    <Columns>
+      <Column Name="uid" DataType="Int32" Nullable="False" DisplayName="Uid" />
+      <Column Name="typeid" DataType="Int16" DisplayName="Typeid" />
+      <Column Name="title" DataType="String" Length="200" Nullable="False" DisplayName="Title" />
+      <Column Name="content" DataType="String" RawType="text" Length="2147483647" NumOfByte="16" IsUnicode="False" DisplayName="Content" />
+      <Column Name="intro" DataType="String" RawType="text" Length="2147483647" NumOfByte="16" IsUnicode="False" DisplayName="Intro" />
+      <Column Name="pic" DataType="String" Length="200" DisplayName="Pic" />
+      <Column Name="pic2" DataType="String" Length="200" DisplayName="Pic2" />
+      <Column Name="pic3" DataType="String" Length="200" DisplayName="Pic3" />
+      <Column Name="click" DataType="Int64" Precision="19" Nullable="False" Default="0" Description="默认0" />
+      <Column Name="addtime" DataType="DateTime" Nullable="False" DisplayName="Addtime" />
+      <Column Name="id" DataType="Int64" Identity="True" PrimaryKey="True" Precision="19" DisplayName="ID" />
+    </Columns>
+    <Indexes>
+      <Index Name="HzsUser_Company_r_FK" Columns="uid" />
+      <Index Name="PK__Company__3213E83F440B1D61" Columns="id" Unique="True" PrimaryKey="True" />
+    </Indexes>
+  </Table>
+  <Table Name="HzsArea" Description="区域表" DbType="SqlServer">
+    <Columns>
+      <Column Name="areaid" DataType="Int64" Precision="19" Nullable="False" DisplayName="Areaid" />
+      <Column Name="sortarea" DataType="String" Nullable="False" Description="简称" />
+      <Column Name="longarea" DataType="String" Length="100" Description="全称" />
+      <Column Name="fid" DataType="Int64" Precision="19" Nullable="False" DisplayName="Fid" />
+      <Column Name="grade" DataType="Int32" DisplayName="Grade" />
+      <Column Name="id" DataType="Int32" Identity="True" PrimaryKey="True" DisplayName="ID" />
+    </Columns>
+    <Indexes>
+      <Index Name="PK__HzsArea__3213E83F7F60ED59" Columns="id" Unique="True" PrimaryKey="True" />
+    </Indexes>
+  </Table>
+  <Table Name="HzsGlory" Description="合作社会员荣誉证书表" DbType="SqlServer">
+    <Columns>
+      <Column Name="uid" DataType="Int32" Nullable="False" DisplayName="Uid" />
+      <Column Name="title" DataType="String" Length="100" Nullable="False" DisplayName="Title" />
+      <Column Name="intro" DataType="String" RawType="text" Length="2147483647" NumOfByte="16" IsUnicode="False" DisplayName="Intro" />
+      <Column Name="pic" DataType="String" Length="200" DisplayName="Pic" />
+      <Column Name="isverify" DataType="Int16" Nullable="False" Default="10" DisplayName="10:审核通过默认" Description="10:审核通过 默认。   20:待审核。   30:未审核。   40:未通过" />
+      <Column Name="addtime" DataType="DateTime" Nullable="False" DisplayName="Addtime" />
+      <Column Name="id" DataType="Int32" Identity="True" PrimaryKey="True" DisplayName="ID" />
+    </Columns>
+    <Indexes>
+      <Index Name="HzsUser_HzsGlory_r_FK" Columns="uid" />
+      <Index Name="PK__HzsGlory__3213E83F1273C1CD" Columns="id" Unique="True" PrimaryKey="True" />
+    </Indexes>
+  </Table>
+  <Table Name="HzsGrade" Description="评价表" DbType="SqlServer">
+    <Columns>
+      <Column Name="uid" DataType="Int32" Nullable="False" DisplayName="Uid" />
+      <Column Name="grade" DataType="Int16" Nullable="False" DisplayName="Grade" />
+      <Column Name="intro" DataType="String" Length="1000" DisplayName="Intro" />
+      <Column Name="ip" DataType="String" Nullable="False" />
+      <Column Name="isvefity" DataType="Int16" Nullable="False" Default="10" DisplayName="10:审核通过默认" Description="10:审核通过 默认。   20:待审核。   30:未审核。   40:未通过" />
+      <Column Name="addtime" DataType="DateTime" Nullable="False" DisplayName="Addtime" />
+      <Column Name="id" DataType="Int32" Identity="True" PrimaryKey="True" DisplayName="ID" />
+    </Columns>
+    <Indexes>
+      <Index Name="HzsUser_HzsGrade_r_FK" Columns="uid" />
+      <Index Name="PK__HzsGrade__3213E83F3A81B327" Columns="id" Unique="True" PrimaryKey="True" />
+    </Indexes>
+  </Table>
+  <Table Name="HzsUser" Description="合作社会员表" DbType="SqlServer">
+    <Columns>
+      <Column Name="hname" DataType="String" Nullable="False" DisplayName="Hname" />
+      <Column Name="hpwd" DataType="String" Length="100" Nullable="False" DisplayName="Hpwd" />
+      <Column Name="email" DataType="String" Length="200" DisplayName="Email" />
+      <Column Name="sex" DataType="Int16" Default="1" DisplayName="1:男默认" Description="1:男 默认。   2:女" />
+      <Column Name="htype" DataType="Int16" Nullable="False" DisplayName="Htype" />
+      <Column Name="linkman" DataType="String" DisplayName="Linkman" />
+      <Column Name="corpname" DataType="String" Length="100" DisplayName="Corpname" />
+      <Column Name="tel" DataType="String" DisplayName="Tel" />
+      <Column Name="fax" DataType="String" DisplayName="Fax" />
+      <Column Name="province" DataType="Int64" Precision="19" DisplayName="Province" />
+      <Column Name="city" DataType="Int64" Precision="19" DisplayName="City" />
+      <Column Name="county" DataType="Int64" Precision="19" DisplayName="County" />
+      <Column Name="address" DataType="String" Length="300" DisplayName="Address" />
+      <Column Name="zipcode" DataType="String" Length="100" DisplayName="Zipcode" />
+      <Column Name="scope" DataType="String" Length="1000" Description="经营范围" />
+      <Column Name="corppic" DataType="String" Length="200" DisplayName="Corppic" />
+      <Column Name="cropregtime" DataType="DateTime" DisplayName="Cropregtime" />
+      <Column Name="licence" DataType="String" Length="200" Description="许可证" />
+      <Column Name="regip" DataType="String" DisplayName="Regip" />
+      <Column Name="isverify" DataType="Int16" Default="10" DisplayName="10:审核通过默认" Description="10:审核通过 默认。   20:待审核。   30:未审核。   40:未通过" />
+      <Column Name="hzslevel" DataType="Int16" DisplayName="Hzslevel" />
+      <Column Name="hzsintro" DataType="String" RawType="text" Length="2147483647" NumOfByte="16" IsUnicode="False" DisplayName="Hzsintro" />
+      <Column Name="skin" DataType="String" RawType="varchar(200)" Length="200" NumOfByte="200" IsUnicode="False" Description="存放企业黄页样式（.css文件）路径" />
+      <Column Name="lasttime" DataType="DateTime" DisplayName="Lasttime" />
+      <Column Name="mobile" DataType="String" DisplayName="Mobile" />
+      <Column Name="qq" DataType="String" Length="200" />
+      <Column Name="isdel" DataType="Int16" Default="0" DisplayName="0:未操作默认" Description="0:未操作 默认。   1:删除" />
+      <Column Name="addtime" DataType="DateTime" Nullable="False" DisplayName="Addtime" />
+      <Column Name="grade" DataType="Decimal" RawType="numeric" Length="18" NumOfByte="9" Precision="18" Description="平均评级" />
+      <Column Name="tjgrade" DataType="Int16" Description="统计合作社等级" />
+      <Column Name="uid" DataType="Int32" Identity="True" PrimaryKey="True" DisplayName="ID" />
+    </Columns>
+    <Indexes>
+      <Index Name="PK__HzsUser__DD70126448CFD27E" Columns="uid" Unique="True" PrimaryKey="True" />
+    </Indexes>
+  </Table>
+  <Table Name="LoginLog" DbType="SqlServer">
+    <Columns>
+      <Column Name="adminid" DataType="Int32" DisplayName="Adminid" />
+      <Column Name="adminname" DataType="String" DisplayName="Adminname" />
+      <Column Name="remark" DataType="String" Length="200" DisplayName="Remark" />
+      <Column Name="logintime" DataType="DateTime" Default="getdate()" DisplayName="Logintime" />
+      <Column Name="loginip" DataType="String" DisplayName="Loginip" />
+      <Column Name="ltype" DataType="Int16" DisplayName="区分管理员和会员1:admin2:hzsuser" Description="区分管理员和会员 1:admin  2:hzsuser" />
+      <Column Name="id" DataType="Int32" Identity="True" PrimaryKey="True" DisplayName="ID" />
+      <Column Name="islogin" DataType="Int16" Default="0" DisplayName="登陆是否成功0:yes1:no" Description="登陆是否成功 0:yes  1:no" />
+    </Columns>
+    <Indexes>
+      <Index Columns="islogin" />
+      <Index Columns="ltype" />
+      <Index Name="PK__LoginLog__3213E83F3F466844" Columns="id" Unique="True" PrimaryKey="True" />
+    </Indexes>
+  </Table>
+  <Table Name="NewsInfo" Description="新闻信息表" DbType="SqlServer">
+    <Columns>
+      <Column Name="id" DataType="Int32" Identity="True" PrimaryKey="True" DisplayName="ID" />
+      <Column Name="adminid" DataType="Int32" DisplayName="主键自增ID" Description="主键 自增ID" />
+      <Column Name="title" DataType="String" RawType="varchar(200)" Length="200" NumOfByte="200" IsUnicode="False" DisplayName="Title" />
+      <Column Name="content" DataType="String" RawType="text" Length="2147483647" NumOfByte="16" IsUnicode="False" DisplayName="Content" />
+      <Column Name="nimg" DataType="String" RawType="varchar(200)" Length="200" NumOfByte="200" IsUnicode="False" DisplayName="Nimg" />
+      <Column Name="nvideo" DataType="String" RawType="varchar(200)" Length="200" NumOfByte="200" IsUnicode="False" DisplayName="Nvideo" />
+      <Column Name="nvideoimg" DataType="String" RawType="varchar(200)" Length="200" NumOfByte="200" IsUnicode="False" DisplayName="Nvideoimg" />
+      <Column Name="ishot" DataType="Int16" Default="0" DisplayName="0:默认否" Description="0:默认 否。      推荐类型10 20 30 40 50....." />
+      <Column Name="ispublic" DataType="Int16" Default="0" Description="0:公开默认。   1:不公开" />
+      <Column Name="isverify" DataType="Int16" Default="1" Description="0:未审核。   1:默认 审核通过" />
+      <Column Name="editor" DataType="String" RawType="varchar(50)" NumOfByte="50" IsUnicode="False" DisplayName="Editor" />
+      <Column Name="addtime" DataType="DateTime" Default="getdate()" Description="添加时间" />
+      <Column Name="ntypeid" DataType="Int32" Description="新闻类型" />
+      <Column Name="intro" DataType="String" RawType="nvarchar(MAX)" Length="-1" NumOfByte="-1" DisplayName="Intro" />
+      <Column Name="click" DataType="Int32" DisplayName="Click" />
+      <Column Name="seotitle" DataType="String" Length="300" DisplayName="Seotitle" />
+      <Column Name="seointro" DataType="String" Length="500" DisplayName="Seointro" />
+      <Column Name="seokeyword" DataType="String" Length="300" DisplayName="Seokeyword" />
+    </Columns>
+    <Indexes>
+      <Index Name="adminuser_news_r_FK" Columns="adminid" />
+      <Index Name="PK__NewsInfo__3213E83F22AA2996" Columns="id" Unique="True" PrimaryKey="True" />
+    </Indexes>
+  </Table>
+  <Table Name="NewsType" Description="新闻类型表" DbType="SqlServer">
+    <Columns>
+      <Column Name="ntypeid" DataType="Int32" Description="类型使用的ID" />
+      <Column Name="pid" DataType="Int32" Nullable="False" DisplayName="Pid" />
+      <Column Name="array" DataType="Int32" Nullable="False" DisplayName="Array" />
+      <Column Name="name" DataType="String" Length="100" Nullable="False" DisplayName="Name" />
+      <Column Name="intro" DataType="String" Length="100" DisplayName="Intro" />
+      <Column Name="editor" DataType="String" DisplayName="Editor" />
+      <Column Name="isdel" DataType="Int16" Default="0" Description="0:默认。   1:删除，实际效果不再页面显示" />
+      <Column Name="addtime" DataType="DateTime" Default="getdate()" DisplayName="Addtime" />
+      <Column Name="ispublic" DataType="Int16" Nullable="False" Default="0" Description="0:公开默认。   1:不公开" />
+      <Column Name="id" DataType="Int32" Identity="True" PrimaryKey="True" Description="自增排序" />
+    </Columns>
+    <Indexes>
+      <Index Name="PK__NewsType__3213E83F300424B4" Columns="id" Unique="True" PrimaryKey="True" />
+    </Indexes>
+  </Table>
+  <Table Name="PlacesInfo" Description="地方信息" DbType="SqlServer">
+    <Columns>
+      <Column Name="title" DataType="String" RawType="varchar(200)" Length="200" NumOfByte="200" Nullable="False" IsUnicode="False" DisplayName="Title" />
+      <Column Name="content" DataType="String" RawType="text" Length="2147483647" NumOfByte="16" IsUnicode="False" DisplayName="Content" />
+      <Column Name="typeid" DataType="Int16" Nullable="False" DisplayName="Typeid" />
+      <Column Name="source" DataType="String" Length="100" DisplayName="Source" />
+      <Column Name="areacode" DataType="String" Length="100" DisplayName="Areacode" />
+      <Column Name="pic" DataType="String" Length="100" DisplayName="Pic" />
+      <Column Name="ishot" DataType="Int16" DisplayName="IsHot" />
+      <Column Name="areaid" DataType="Int32" Nullable="False" DisplayName="Areaid" />
+      <Column Name="isdel" DataType="Int16" Nullable="False" Default="0" Description="0:默认。   1:删除" />
+      <Column Name="addtime" DataType="DateTime" Nullable="False" DisplayName="Addtime" />
+      <Column Name="adminid" DataType="Int32" Nullable="False" DisplayName="Adminid" />
+      <Column Name="id" DataType="Int32" Identity="True" PrimaryKey="True" DisplayName="ID" />
+    </Columns>
+    <Indexes>
+      <Index Name="PK__PlacesIn__3213E83F2A4B4B5E" Columns="id" Unique="True" PrimaryKey="True" />
+    </Indexes>
+  </Table>
+  <Table Name="SysLog" DbType="SqlServer">
+    <Columns>
+      <Column Name="logValue" DataType="String" Length="200" DisplayName="LogValue" />
+      <Column Name="operate" DataType="String" DisplayName="Operate" />
+      <Column Name="editor" DataType="String" DisplayName="Editor" />
+      <Column Name="ip" DataType="String" Length="100" />
+      <Column Name="logType" DataType="Int32" DisplayName="LogType" />
+      <Column Name="addtime" DataType="DateTime" Default="getdate()" DisplayName="Addtime" />
+      <Column Name="adminid" DataType="Int32" DisplayName="Adminid" />
+      <Column Name="id" DataType="Int64" Identity="True" PrimaryKey="True" Precision="19" DisplayName="ID" />
+    </Columns>
+    <Indexes>
+      <Index Name="PK__SysLog__3213E83F1DE57479" Columns="id" Unique="True" PrimaryKey="True" />
+    </Indexes>
+  </Table>
+  <Table Name="Trade" Description="供求交易信息" DbType="SqlServer">
+    <Columns>
+      <Column Name="uid" DataType="Int32" Nullable="False" DisplayName="Uid" />
+      <Column Name="tradetype" DataType="Int16" Nullable="False" Default="10" DisplayName="10:供应默认" Description="10:供应  默认。   20:求购。   30:合作" />
+      <Column Name="name" DataType="String" Length="200" DisplayName="Name" />
+      <Column Name="ptype" DataType="Int32" DisplayName="Ptype" />
+      <Column Name="ptype2" DataType="Int32" DisplayName="Ptype2" />
+      <Column Name="title" DataType="String" Length="200" DisplayName="Title" />
+      <Column Name="tpic" DataType="String" Length="200" DisplayName="Tpic" />
+      <Column Name="pic2" DataType="String" Length="200" DisplayName="Pic2" />
+      <Column Name="pic3" DataType="String" Length="200" DisplayName="Pic3" />
+      <Column Name="price" DataType="Decimal" NumOfByte="8" Precision="19" Scale="4" Default="0" Description="价格默认0" />
+      <Column Name="units" DataType="String" Description="对应价格单位" />
+      <Column Name="sellunits" DataType="String" RawType="varchar(20)" Length="20" NumOfByte="20" IsUnicode="False" Description="对应供应数量" />
+      <Column Name="brand" DataType="String" Description="产品品牌" />
+      <Column Name="intro" DataType="String" RawType="text" Length="2147483647" NumOfByte="16" IsUnicode="False" Description="简单介绍" />
+      <Column Name="ishot" DataType="Int16" Default="0" Description="0:默认。   1:推荐产品" />
+      <Column Name="isverify" DataType="Int16" Default="10" DisplayName="10:审核通过默认" Description="10:审核通过 默认。   20:待审核。   30:未审核。   40:未通过" />
+      <Column Name="addtime" DataType="DateTime" Nullable="False" DisplayName="Addtime" />
+      <Column Name="province" DataType="Int64" Precision="19" DisplayName="Province" />
+      <Column Name="city" DataType="Int64" Precision="19" DisplayName="City" />
+      <Column Name="county" DataType="Int64" Precision="19" DisplayName="County" />
+      <Column Name="address" DataType="String" Length="200" DisplayName="Address" />
+      <Column Name="click" DataType="Int32" Nullable="False" Default="0" Description="默认0" />
+      <Column Name="today" DataType="Int32" Description="到期时间type" />
+      <Column Name="daytime" DataType="DateTime" Description="到期时间" />
+      <Column Name="id" DataType="Int32" Identity="True" PrimaryKey="True" Description="主键自增ID" />
+    </Columns>
+    <Indexes>
+      <Index Name="HzsUser_Trade_r_FK" Columns="uid" />
+      <Index Name="PK__Trade__3213E83F09DE7BCC" Columns="id" Unique="True" PrimaryKey="True" />
+    </Indexes>
+  </Table>
+  <Table Name="TradeConsult" Description="供求信息咨询表" DbType="SqlServer">
+    <Columns>
+      <Column Name="title" DataType="String" Length="200" DisplayName="Title" />
+      <Column Name="intro" DataType="String" Length="1024" DisplayName="Intro" />
+      <Column Name="tid" DataType="Int32" Nullable="False" Description="供求信息id" />
+      <Column Name="email" DataType="String" Length="100" DisplayName="Email" />
+      <Column Name="tel" DataType="String" DisplayName="Tel" />
+      <Column Name="consultname" DataType="String" Description="回复人" />
+      <Column Name="consultuid" DataType="Int32" Nullable="False" Description="咨询人Id" />
+      <Column Name="replyintro" DataType="String" Length="1024" DisplayName="Replyintro" />
+      <Column Name="addtime" DataType="DateTime" Default="getdate()" DisplayName="Addtime" />
+      <Column Name="replytime" DataType="DateTime" DisplayName="Replytime" />
+      <Column Name="replyuid" DataType="Int32" Nullable="False" DisplayName="合作社用户ID外键" Description="合作社用户ID 外键" />
+      <Column Name="ispublic" DataType="Int16" Default="0" Description="1:不公开。   0:默认公开" />
+      <Column Name="consultid" DataType="Int64" Identity="True" PrimaryKey="True" Precision="19" DisplayName="ID" />
+    </Columns>
+    <Indexes>
+      <Index Name="PK__TradeCon__14BB76494F7CD00D" Columns="consultid" Unique="True" PrimaryKey="True" />
+    </Indexes>
+  </Table>
+  <Table Name="TradeSort" Description="供求类型表" DbType="SqlServer">
+    <Columns>
+      <Column Name="tid" DataType="Int32" Nullable="False" Description="主键ID，查询时使用此ID" />
+      <Column Name="depth" DataType="Int16" Nullable="False" DisplayName="Depth" />
+      <Column Name="array" DataType="Int32" Nullable="False" DisplayName="Array" />
+      <Column Name="sname" DataType="String" Nullable="False" DisplayName="Sname" />
+      <Column Name="pid" DataType="Int32" Nullable="False" Default="0" Description="查询ID的父ID默认0" />
+      <Column Name="ispublic" DataType="Int16" Default="0" Description="0:默认公开。   1:不公开" />
+      <Column Name="isrose" DataType="Int32" Default="0" DisplayName="默认0所以权限" Description="默认0 所以权限" />
+      <Column Name="sortid" DataType="Int32" Identity="True" PrimaryKey="True" Description="序号ID，不使用" />
+    </Columns>
+    <Indexes>
+      <Index Name="PK__TradeSor__286137E003317E3D" Columns="sortid" Unique="True" PrimaryKey="True" />
+    </Indexes>
+  </Table>
+</Tables>

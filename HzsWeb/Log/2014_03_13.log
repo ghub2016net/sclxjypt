@@ -1,0 +1,215 @@
+﻿#Software: WebDev.WebServer20
+#ProcessID: 3240
+#AppDomain: 451b5163-1-130391457880254946
+#FileName: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer20.exe
+#BaseDirectory: E:\NET_CODE\HZS_SVN\HzsCms\HzsWeb\
+#CurrentDirectory: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0
+#CommandLine: /port:2368 /path:"E:\NET_CODE\HZS_SVN\HzsCms\HzsWeb" /vpath:"/"
+#ApplicationType: Web
+#CLR: 2.0.50727.6407
+#OS: Windows 8 x64, 琨/HIKYUU
+#Date: 2014-03-13
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+09:10:53.552 24 W - NewLife.Core v3.9.2013.0907 Build 2013-09-17 17:48:48
+09:10:53.562 24 W - NewLife.XCode v8.9.2013.0909 Build 2013-09-17 17:58:18
+09:10:53.563 24 W - 开始检查连接[hzsweb/SqlServer]的数据库架构……
+09:10:53.586 24 W - [hzsweb]的所有实体类（18个）：HzsGrade,TradeConsult,HzsUser,HzsGlory,SysLog,Company,HzsArea,AdminRole,TradeSort,LoginLog,AdminUser,PlacesInfo,HzsClass,NewsType,NewsInfo,Link,HzsAddress,Trade
+09:10:53.586 24 W - [hzsweb]需要检查架构的实体类（18个）：HzsGrade,TradeConsult,HzsUser,HzsGlory,SysLog,Company,HzsArea,AdminRole,TradeSort,LoginLog,AdminUser,PlacesInfo,HzsClass,NewsType,NewsInfo,Link,HzsAddress,Trade
+09:10:53.587 24 W - hzsweb待检查表架构的实体个数：18
+09:10:53.800 24 W - [hzsweb]GetSchema("MetaDataCollections")
+09:10:54.070 24 W - [hzsweb]GetSchema("Databases", "hzsweb")
+09:10:54.094 24 W - [hzsweb]GetSchema("Tables")
+09:10:55.182 24 W - [hzsweb]GetSchema("Columns")
+09:10:55.228 24 W - [hzsweb]GetSchema("Indexes")
+09:10:55.235 24 W - [hzsweb]GetSchema("IndexColumns")
+09:10:55.243 24 W - [hzsweb]GetSchema("DataTypes")
+09:10:55.732 24 W - 检查连接[hzsweb/SqlServer]的数据库架构耗时00:00:02.1687654
+09:10:55.744 24 W - [hzsweb]GetSchema("ReservedWords")
+09:10:55.760 24 W - 初始化HzsModel.Models.HzsGlory数据
+09:10:55.762 24 W - 一级缓存：关闭缓存
+09:10:55.764 24 W - Update HzsGlory Set uid=1, title=N'三对方是的房贷首付', intro='三对方三对方是否多少分' Where id=9
+
+#Software: WebDev.WebServer20
+#ProcessID: 3240
+#AppDomain: 451b5163-3-130391473056294232
+#FileName: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer20.exe
+#BaseDirectory: E:\NET_CODE\HZS_SVN\HzsCms\HzsWeb\
+#CurrentDirectory: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0
+#CommandLine: /port:2368 /path:"E:\NET_CODE\HZS_SVN\HzsCms\HzsWeb" /vpath:"/"
+#ApplicationType: Web
+#CLR: 2.0.50727.6407
+#OS: Windows 8 x64, 琨/HIKYUU
+#Date: 2014-03-13
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+09:22:11.395 33 W - NewLife.Core v3.9.2013.0907 Build 2013-09-17 17:48:48
+09:22:11.404 33 W - NewLife.XCode v8.9.2013.0909 Build 2013-09-17 17:58:18
+09:22:11.405 33 W - 开始检查连接[hzsweb/SqlServer]的数据库架构……
+09:22:11.430 33 W - [hzsweb]的所有实体类（18个）：HzsGrade,TradeConsult,HzsUser,HzsGlory,SysLog,Company,HzsArea,AdminRole,TradeSort,LoginLog,AdminUser,PlacesInfo,HzsClass,NewsType,NewsInfo,Link,HzsAddress,Trade
+09:22:11.430 33 W - [hzsweb]需要检查架构的实体类（18个）：HzsGrade,TradeConsult,HzsUser,HzsGlory,SysLog,Company,HzsArea,AdminRole,TradeSort,LoginLog,AdminUser,PlacesInfo,HzsClass,NewsType,NewsInfo,Link,HzsAddress,Trade
+09:22:11.430 33 W - hzsweb待检查表架构的实体个数：18
+09:22:11.458 33 W - [hzsweb]GetSchema("MetaDataCollections")
+09:22:11.464 33 W - [hzsweb]GetSchema("Databases", "hzsweb")
+09:22:11.477 33 W - [hzsweb]GetSchema("Tables")
+09:22:11.688 33 W - [hzsweb]GetSchema("Columns")
+09:22:11.704 33 W - [hzsweb]GetSchema("Indexes")
+09:22:11.706 33 W - [hzsweb]GetSchema("IndexColumns")
+09:22:11.714 33 W - [hzsweb]GetSchema("DataTypes")
+09:22:11.776 33 W - 检查连接[hzsweb/SqlServer]的数据库架构耗时00:00:00.3712763
+09:22:11.790 33 W - [hzsweb]GetSchema("ReservedWords")
+09:22:11.809 33 W - 初始化HzsModel.Models.Company数据
+09:22:11.811 33 W - 一级缓存：关闭缓存
+09:22:11.815 33 W - Update Company Set uid=1, typeid=1, content=N'asdasdas', intro=N'深深的速度' Where id=1
+09:23:13.081 33 W - select rows from sysindexes where id = object_id('AdminUser') and indid in (0,1)
+09:23:13.086 33 W - 初始化HzsModel.Models.AdminUser数据
+09:23:13.226 33 W - Select * From AdminUser Order By adminid Desc
+09:23:13.254 33 W - 初始化HzsModel.Models.LoginLog数据
+09:23:13.255 33 W - SET NOCOUNT ON;Insert Into LoginLog(adminid, adminname, remark, logintime, loginip, ltype, islogin) Values(1, N'admin', N'成功.', {ts'2014-03-13 09:23:13'}, N'127.0.0.1', 1, 0);Select SCOPE_IDENTITY()
+
+#Software: WebDev.WebServer20
+#ProcessID: 3240
+#AppDomain: 451b5163-4-130391499527940488
+#FileName: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer20.exe
+#BaseDirectory: E:\NET_CODE\HZS_SVN\HzsCms\HzsWeb\
+#CurrentDirectory: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0
+#CommandLine: /port:2368 /path:"E:\NET_CODE\HZS_SVN\HzsCms\HzsWeb" /vpath:"/"
+#ApplicationType: Web
+#CLR: 2.0.50727.6407
+#OS: Windows 8 x64, 琨/HIKYUU
+#Date: 2014-03-13
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+10:07:18.530 15 W - NewLife.Core v3.9.2013.0907 Build 2013-09-17 17:48:48
+10:07:18.539 15 W - NewLife.XCode v8.9.2013.0909 Build 2013-09-17 17:58:18
+10:07:18.540 15 W - 开始检查连接[hzsweb/SqlServer]的数据库架构……
+10:07:18.563 15 W - [hzsweb]的所有实体类（18个）：HzsGrade,TradeConsult,HzsUser,HzsGlory,SysLog,Company,HzsArea,AdminRole,TradeSort,LoginLog,AdminUser,PlacesInfo,HzsClass,NewsType,NewsInfo,Link,HzsAddress,Trade
+10:07:18.563 15 W - [hzsweb]需要检查架构的实体类（18个）：HzsGrade,TradeConsult,HzsUser,HzsGlory,SysLog,Company,HzsArea,AdminRole,TradeSort,LoginLog,AdminUser,PlacesInfo,HzsClass,NewsType,NewsInfo,Link,HzsAddress,Trade
+10:07:18.563 15 W - hzsweb待检查表架构的实体个数：18
+10:07:18.593 15 W - [hzsweb]GetSchema("MetaDataCollections")
+10:07:18.599 15 W - [hzsweb]GetSchema("Databases", "hzsweb")
+10:07:18.613 15 W - [hzsweb]GetSchema("Tables")
+10:07:18.815 15 W - [hzsweb]GetSchema("Columns")
+10:07:18.836 15 W - [hzsweb]GetSchema("Indexes")
+10:07:18.838 15 W - [hzsweb]GetSchema("IndexColumns")
+10:07:18.847 15 W - [hzsweb]GetSchema("DataTypes")
+10:07:18.910 15 W - 检查连接[hzsweb/SqlServer]的数据库架构耗时00:00:00.3696239
+10:07:18.926 15 W - [hzsweb]GetSchema("ReservedWords")
+10:07:18.943 15 W - 初始化HzsModel.Models.HzsUser数据
+10:07:18.945 15 W - 一级缓存：关闭缓存
+10:07:18.951 15 W - SET NOCOUNT ON;Insert Into HzsUser(hname, hpwd, email, htype, linkman, corpname, tel, province, city, address, zipcode, [scope], corppic, cropregtime, licence, regip, isverify, hzsintro, qq, addtime, hzsboss, hzslevellasttime, sfsjb, ishot, hzsbigclass) Values(N'xxoxx', N'56Oh1buYmjs=', N'xiukun@163.com', 3, N'xx先生', N'xxoxx合作社', N'13793281753', 31, 310115, N'上海XXXXXXX 地址', N'43434343', N'2|3|', N'1407131007178548.png', null, N'888888', N'::1', 10, null, null, {ts'2014-03-13 10:07:18'}, N'修琨', '2015-04-10', 3, 0, 26);Select SCOPE_IDENTITY()
+10:07:19.165 15 W - 初始化HzsModel.Models.SysLog数据
+10:07:19.165 15 W - SET NOCOUNT ON;Insert Into SysLog(logValue, operate, editor, ip, logType, addtime, adminid) Values(N'添加合作社会员 xxoxx 成功.', N'Add', N'admin', N'127.0.0.1', 1, {ts'2014-03-13 10:07:19'}, 1);Select SCOPE_IDENTITY()
+10:08:07.826 15 W - select rows from sysindexes where id = object_id('HzsUser') and indid in (0,1)
+10:08:07.863 15 W - Select * From HzsUser Order By uid Desc
+
+#Software: WebDev.WebServer20
+#ProcessID: 3240
+#AppDomain: 451b5163-5-130391626983391886
+#FileName: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer20.exe
+#BaseDirectory: E:\NET_CODE\HZS_SVN\HzsCms\HzsWeb\
+#CurrentDirectory: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0
+#CommandLine: /port:2368 /path:"E:\NET_CODE\HZS_SVN\HzsCms\HzsWeb" /vpath:"/"
+#ApplicationType: Web
+#CLR: 2.0.50727.6407
+#OS: Windows 8 x64, 琨/HIKYUU
+#Date: 2014-03-13
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+15:36:07.583 46 W - NewLife.Core v3.9.2013.0907 Build 2013-09-17 17:48:48
+15:36:07.604 46 W - NewLife.XCode v8.9.2013.0909 Build 2013-09-17 17:58:18
+15:36:07.604 46 W - [hzsweb]GetSchema("MetaDataCollections")
+15:36:07.610 46 W - [hzsweb]GetSchema("Databases", "hzsweb")
+15:36:07.623 46 W - [hzsweb]GetSchema("Tables")
+15:36:08.520 46 W - [hzsweb]GetSchema("Columns")
+15:36:08.538 46 W - [hzsweb]GetSchema("Indexes")
+15:36:08.540 46 W - [hzsweb]GetSchema("IndexColumns")
+15:36:08.548 46 W - [hzsweb]GetSchema("DataTypes")
+15:36:08.601 46 W - select rows from sysindexes where id = object_id('HzsUser') and indid in (0,1)
+15:36:08.605 46 W - 初始化HzsModel.Models.HzsUser数据
+15:36:08.612 46 W - 一级缓存：关闭缓存
+15:36:08.631 46 W - [hzsweb]GetSchema("ReservedWords")
+15:36:08.642 46 W - 开始检查连接[hzsweb/SqlServer]的数据库架构……
+15:36:08.665 46 W - [hzsweb]的所有实体类（18个）：HzsGrade,TradeConsult,HzsUser,HzsGlory,SysLog,Company,HzsArea,AdminRole,TradeSort,LoginLog,AdminUser,PlacesInfo,HzsClass,NewsType,NewsInfo,Link,HzsAddress,Trade
+15:36:08.665 46 W - [hzsweb]需要检查架构的实体类（18个）：HzsGrade,TradeConsult,HzsUser,HzsGlory,SysLog,Company,HzsArea,AdminRole,TradeSort,LoginLog,AdminUser,PlacesInfo,HzsClass,NewsType,NewsInfo,Link,HzsAddress,Trade
+15:36:08.665 46 W - hzsweb待检查表架构的实体个数：18
+15:36:09.506 46 W - 检查连接[hzsweb/SqlServer]的数据库架构耗时00:00:00.8632553
+15:36:09.506 46 W - Select * From HzsUser Order By uid Desc
+
+#Software: WebDev.WebServer20
+#ProcessID: 2580
+#AppDomain: 451b5163-1-130391891267913480
+#FileName: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer20.exe
+#BaseDirectory: E:\NET_CODE\HZS_SVN\HzsCms\HzsWeb\
+#CurrentDirectory: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0
+#CommandLine: /port:2368 /path:"E:\NET_CODE\HZS_SVN\HzsCms\HzsWeb" /vpath:"/"
+#ApplicationType: Web
+#CLR: 2.0.50727.6407
+#OS: Windows 8 x64, 琨/HIKYUU
+#Date: 2014-03-13
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+21:08:32.699 26 W - NewLife.Core v3.9.2013.0907 Build 2013-09-17 17:48:48
+21:08:32.872 26 W - NewLife.XCode v8.9.2013.0909 Build 2013-09-17 17:58:18
+21:08:32.874 26 W - 开始检查连接[hzsweb/SqlServer]的数据库架构……
+21:08:32.916 26 W - [hzsweb]的所有实体类（18个）：HzsGrade,TradeConsult,HzsUser,HzsGlory,SysLog,Company,HzsArea,AdminRole,TradeSort,LoginLog,AdminUser,PlacesInfo,HzsClass,NewsType,NewsInfo,Link,HzsAddress,Trade
+21:08:32.916 26 W - [hzsweb]需要检查架构的实体类（18个）：HzsGrade,TradeConsult,HzsUser,HzsGlory,SysLog,Company,HzsArea,AdminRole,TradeSort,LoginLog,AdminUser,PlacesInfo,HzsClass,NewsType,NewsInfo,Link,HzsAddress,Trade
+21:08:32.917 26 W - hzsweb待检查表架构的实体个数：18
+21:08:32.964 26 W - [hzsweb]GetSchema("MetaDataCollections")
+21:08:32.977 26 W - [hzsweb]GetSchema("Databases", "hzsweb")
+21:08:32.999 26 W - [hzsweb]GetSchema("Tables")
+21:08:33.107 26 W - [hzsweb]GetSchema("Columns")
+21:08:33.123 26 W - [hzsweb]GetSchema("Indexes")
+21:08:33.126 26 W - [hzsweb]GetSchema("IndexColumns")
+21:08:33.136 26 W - [hzsweb]GetSchema("DataTypes")
+21:08:33.215 26 W - 检查连接[hzsweb/SqlServer]的数据库架构耗时00:00:00.3405950
+21:08:33.234 26 W - [hzsweb]GetSchema("ReservedWords")
+21:08:33.248 26 W - 初始化HzsModel.Models.NewsInfo数据
+21:08:33.251 26 W - 一级缓存：关闭缓存
+21:08:33.258 26 W - SET NOCOUNT ON;Insert Into NewsInfo(adminid, title, content, nimg, ishot, isverify, editor, addtime, ntypeid, intro, click, seotitle, seointro, seokeyword) Values(1, 'sdds', null, null, 0, 10, 'admin', {ts'2014-03-13 21:08:33'}, 1, null, 0, null, null, null);Select SCOPE_IDENTITY()
+21:08:33.351 26 W - 初始化HzsModel.Models.SysLog数据
+21:08:33.351 26 W - SET NOCOUNT ON;Insert Into SysLog(logValue, operate, editor, ip, logType, addtime, adminid) Values(N'添加供求 sdds 成功.', N'Add', N'admin', N'127.0.0.1', 1, {ts'2014-03-13 21:08:33'}, 1);Select SCOPE_IDENTITY()
+21:09:24.787 24 W - 初始化HzsModel.Models.PlacesInfo数据
+21:09:24.788 24 W - SET NOCOUNT ON;Insert Into PlacesInfo(title, content, typeid, source, areacode, pic, ishot, areaid, addtime, adminid, intro, click, isverify, editor, seotitle, seointro, seokeyword) Values('asass', null, 1, N'站内信息', N'青龙满族自治县', null, 0, 130321, {ts'2014-03-13 21:09:24'}, 1, null, 0, 10, 'admin', null, null, null);Select SCOPE_IDENTITY()
+21:09:24.900 24 W - SET NOCOUNT ON;Insert Into SysLog(logValue, operate, editor, ip, logType, addtime, adminid) Values(N'添加地方频道信息 asass 成功.', N'Add', N'admin', N'127.0.0.1', 1, {ts'2014-03-13 21:09:24'}, 1);Select SCOPE_IDENTITY()
+21:42:04.315 32 W - select rows from sysindexes where id = object_id('HzsGlory') and indid in (0,1)
+21:42:04.357 32 W - 初始化HzsModel.Models.HzsGlory数据
+21:42:04.397 32 W - Select * From HzsGlory Order By id Desc
+21:42:04.417 32 W - Delete From HzsGlory Where id=5
+21:42:09.442 32 W - select rows from sysindexes where id = object_id('HzsGlory') and indid in (0,1)
+21:42:09.445 32 W - Select * From HzsGlory Order By id Desc
+21:42:09.446 32 W - Delete From HzsGlory Where id=6
+
+#Software: WebDev.WebServer20
+#ProcessID: 2580
+#AppDomain: 451b5163-2-130391927299671249
+#FileName: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0\WebDev.WebServer20.exe
+#BaseDirectory: E:\NET_CODE\HZS_SVN\HzsCms\HzsWeb\
+#CurrentDirectory: C:\Program Files (x86)\Common Files\Microsoft Shared\DevServer\10.0
+#CommandLine: /port:2368 /path:"E:\NET_CODE\HZS_SVN\HzsCms\HzsWeb" /vpath:"/"
+#ApplicationType: Web
+#CLR: 2.0.50727.6407
+#OS: Windows 8 x64, 琨/HIKYUU
+#Date: 2014-03-13
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+21:58:54.985 33 W - NewLife.Core v3.9.2013.0907 Build 2013-09-17 17:48:48
+21:58:54.996 33 W - NewLife.XCode v8.9.2013.0909 Build 2013-09-17 17:58:18
+21:58:54.996 33 W - [hzsweb]GetSchema("MetaDataCollections")
+21:58:55.001 33 W - [hzsweb]GetSchema("Databases", "hzsweb")
+21:58:55.018 33 W - [hzsweb]GetSchema("Tables")
+21:58:55.179 33 W - [hzsweb]GetSchema("Columns")
+21:58:55.192 33 W - [hzsweb]GetSchema("Indexes")
+21:58:55.194 33 W - [hzsweb]GetSchema("IndexColumns")
+21:58:55.204 33 W - [hzsweb]GetSchema("DataTypes")
+21:58:55.252 33 W - select rows from sysindexes where id = object_id('Company') and indid in (0,1)
+21:58:55.261 33 W - 初始化HzsModel.Models.Company数据
+21:58:55.268 33 W - 一级缓存：关闭缓存
+21:58:55.287 33 W - [hzsweb]GetSchema("ReservedWords")
+21:58:55.297 33 W - 开始检查连接[hzsweb/SqlServer]的数据库架构……
+21:58:55.322 33 W - [hzsweb]的所有实体类（18个）：HzsGrade,TradeConsult,HzsUser,HzsGlory,SysLog,Company,HzsArea,AdminRole,TradeSort,LoginLog,AdminUser,PlacesInfo,HzsClass,NewsType,NewsInfo,Link,HzsAddress,Trade
+21:58:55.322 33 W - [hzsweb]需要检查架构的实体类（18个）：HzsGrade,TradeConsult,HzsUser,HzsGlory,SysLog,Company,HzsArea,AdminRole,TradeSort,LoginLog,AdminUser,PlacesInfo,HzsClass,NewsType,NewsInfo,Link,HzsAddress,Trade
+21:58:55.322 33 W - hzsweb待检查表架构的实体个数：18
+21:58:55.492 33 W - 检查连接[hzsweb/SqlServer]的数据库架构耗时00:00:00.1945320
+21:58:55.493 33 W - Select * From Company Order By id Desc
+21:58:55.521 33 W - Delete From Company Where id=2
+21:59:13.961 33 W - select rows from sysindexes where id = object_id('Company') and indid in (0,1)
+21:59:13.963 33 W - Select * From Company Order By id Desc
+21:59:13.964 33 W - Delete From Company Where id=3
+22:05:10.747 33 W - select rows from sysindexes where id = object_id('HzsUser') and indid in (0,1)
+22:05:10.749 33 W - 初始化HzsModel.Models.HzsUser数据
+22:05:10.750 33 W - Select * From HzsUser Order By uid Desc

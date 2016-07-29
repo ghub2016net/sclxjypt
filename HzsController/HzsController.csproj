@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B49CBB77-EF26-41D1-9336-09DC34685ADA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HzsController</RootNamespace>
+    <AssemblyName>HzsController</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ClownFish, Version=1.2.0.0, Culture=neutral, PublicKeyToken=6d8c6494249e7c4d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\DLL\ClownFish.dll</HintPath>
+    </Reference>
+    <Reference Include="LitJSON, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\DLL\LitJSON.dll</HintPath>
+    </Reference>
+    <Reference Include="NewLife.Core, Version=3.9.5008.32064, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\DLL\NewLife.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="XCode, Version=8.9.5008.32349, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\DLL\DLL\XCode.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\AjaxAdminUser.cs" />
+    <Compile Include="Admin\AjaxBackup.cs" />
+    <Compile Include="Admin\AjaxHzsUser.cs" />
+    <Compile Include="Admin\AjaxLogin.cs" />
+    <Compile Include="Admin\AjaxLoginLog.cs" />
+    <Compile Include="Admin\AjaxNewsInfo.cs" />
+    <Compile Include="Admin\AjaxNewsType.cs" />
+    <Compile Include="Admin\AjaxPlacesInfo.cs" />
+    <Compile Include="Admin\AjaxSysLog.cs" />
+    <Compile Include="Admin\AjaxTrade.cs" />
+    <Compile Include="Admin\SystemLog.cs" />
+    <Compile Include="BLL\BllFactory.cs" />
+    <Compile Include="BLL\Interface\IAdminUser.cs" />
+    <Compile Include="BLL\Interface\ISiteConfig.cs" />
+    <Compile Include="BLL\SqlServer\SiteConfigSqlBLL.cs" />
+    <Compile Include="Page\common\XzHeaderControl.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="quote\QuoteSiteConfig.cs" />
+    <Compile Include="upload\Ajaxfile_manager_json.cs" />
+    <Compile Include="upload\Ajaxupload_json.cs" />
+    <Compile Include="User\AjaxHzsUserManage.cs" />
+    <Compile Include="View\AjaxViewCompany.cs" />
+    <Compile Include="View\AjaxViewHzsGlory.cs" />
+    <Compile Include="View\AjaxViewHzsUser.cs" />
+    <Compile Include="View\AjaxViewTrade.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HzsCommon\HzsCommon.csproj">
+      <Project>{0CEA51C6-8B09-4BF8-9377-75E670B892FA}</Project>
+      <Name>HzsCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HzsModel\HzsModel.csproj">
+      <Project>{64B52458-457F-4595-913D-2E6077FFB51E}</Project>
+      <Name>HzsModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\myMVC\MyMVC.csproj">
+      <Project>{0151E882-2DE2-44BF-BCF0-B7D10B60BE62}</Project>
+      <Name>MyMVC</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

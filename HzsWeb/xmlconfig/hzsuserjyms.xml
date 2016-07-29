@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfHzsUserJyms xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <HzsUserJyms>
+        <id>1</id>
+        <jname>工业生产型</jname>
+    </HzsUserJyms>
+    <HzsUserJyms>
+        <id>2</id>
+        <jname>农业生产型</jname>
+    </HzsUserJyms>
+    <HzsUserJyms>
+        <id>3</id>
+        <jname>商业贸易型</jname>
+    </HzsUserJyms>
+    <HzsUserJyms>
+        <id>4</id>
+        <jname>政府或其他机构</jname>
+    </HzsUserJyms>
+    <HzsUserJyms>
+        <id>5</id>
+        <jname>综合</jname>
+    </HzsUserJyms>
+    <HzsUserJyms>
+        <id>6</id>
+        <jname>农产品加工型</jname>
+    </HzsUserJyms>
+    <HzsUserJyms>
+        <id>7</id>
+        <jname>土地流转型</jname>
+    </HzsUserJyms>
+    <HzsUserJyms>
+        <id>8</id>
+        <jname>其他</jname>
+    </HzsUserJyms>
+</ArrayOfHzsUserJyms>

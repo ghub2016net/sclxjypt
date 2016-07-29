@@ -1,0 +1,76 @@
+﻿#Software: WebDev.WebServer
+#ProcessID: 5388
+#AppDomain: 28b94d4e-1-131018892229375000
+#FileName: D:\Program Files\Common Files\Microsoft Shared\DevServer\9.0\WebDev.WebServer.EXE
+#BaseDirectory: E:\vs2008_svn签出\泸县合作社\HzsCms\HzsWeb\
+#CurrentDirectory: D:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE
+#CommandLine: /port:2368 /path:"E:\vs2008_svn签出\泸县合作社\HzsCms\HzsWeb" /vpath:"/"
+#ApplicationType: Web
+#CLR: 2.0.50727.3662
+#OS: Windows Server 2003 Standard Service Pack 2, Administrator/SUNSOFT-821E9FB
+#Date: 2016-03-08
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+15:10:25.140 4 W - NewLife.Core v3.9.2013.0907 Build 2013-09-17 17:48:48
+15:10:25.187 4 W - NewLife.XCode v8.9.2013.0909 Build 2013-09-17 17:58:18
+15:10:25.187 4 W - [hzsweb]GetSchema("MetaDataCollections")
+15:10:25.562 4 W - [hzsweb]GetSchema("ReservedWords")
+15:10:25.593 4 W - [hzsweb]GetSchema("Databases", "hzsweb")
+15:10:26.328 4 W - [hzsweb]GetSchema("Tables")
+15:10:28.781 4 W - [hzsweb]GetSchema("Columns")
+15:10:29.031 4 W - [hzsweb]GetSchema("Indexes")
+15:10:29.093 4 W - [hzsweb]GetSchema("IndexColumns")
+15:10:29.203 4 W - [hzsweb]GetSchema("DataTypes")
+15:10:29.296 4 W - 初始化HzsModel.Models.HzsArea数据
+15:10:29.328 4 W - 开始检查连接[hzsweb/SqlServer]的数据库架构……
+15:10:29.375 4 W - [hzsweb]的所有实体类（18个）：Link,HzsAddress,SysLog,HzsGrade,AdminRole,HzsUser,LoginLog,Trade,HzsArea,HzsClass,TradeConsult,HzsGlory,Company,AdminUser,TradeSort,NewsType,PlacesInfo,NewsInfo
+15:10:29.375 4 W - [hzsweb]需要检查架构的实体类（18个）：Link,HzsAddress,SysLog,HzsGrade,AdminRole,HzsUser,LoginLog,Trade,HzsArea,HzsClass,TradeConsult,HzsGlory,Company,AdminUser,TradeSort,NewsType,PlacesInfo,NewsInfo
+15:10:29.375 4 W - hzsweb待检查表架构的实体个数：18
+15:10:29.890 4 W - 检查连接[hzsweb/SqlServer]的数据库架构耗时00:00:00.5491974
+15:10:29.890 4 W - 一级缓存：关闭缓存
+15:10:29.890 4 W - Select * From HzsArea Order By id Desc
+15:10:29.968 4 W - Select * From HzsArea Order By id Desc
+15:10:30.046 4 W - 初始化HzsModel.Models.TradeSort数据
+15:10:30.062 4 W - Select * From TradeSort Order By sortid Desc
+15:10:30.078 4 W - Select * From TradeSort Order By sortid Desc
+15:10:30.093 4 W - 初始化HzsModel.Models.NewsType数据
+15:10:30.093 4 W - Select * From NewsType Order By id Desc
+15:10:30.125 4 W - Select * From NewsType Order By id Desc
+15:10:30.125 4 W - 初始化HzsModel.Models.HzsClass数据
+15:10:30.125 4 W - Select * From HzsClass Order By sortid Desc
+15:10:30.125 4 W - Select * From HzsClass Order By sortid Desc
+17:07:33.015 19 W - Select * From HzsArea Order By id Desc
+17:07:33.265 19 W - Select * From HzsArea Order By id Desc
+17:07:33.453 19 W - Select * From TradeSort Order By sortid Desc
+17:07:33.531 19 W - Select * From TradeSort Order By sortid Desc
+17:07:33.562 19 W - Select * From NewsType Order By id Desc
+17:07:33.593 19 W - Select * From NewsType Order By id Desc
+17:07:33.625 19 W - Select * From HzsClass Order By sortid Desc
+17:07:33.671 19 W - Select * From HzsClass Order By sortid Desc
+17:07:33.703 19 W - Select * From HzsArea Order By id Desc
+17:07:36.640 19 W - Select * From HzsArea Order By id Desc
+17:07:36.703 19 W - Select * From HzsArea Order By id Desc
+17:07:36.765 19 W - Select * From TradeSort Order By sortid Desc
+17:07:36.765 19 W - Select * From TradeSort Order By sortid Desc
+17:07:36.781 19 W - Select * From NewsType Order By id Desc
+17:07:36.781 19 W - Select * From NewsType Order By id Desc
+17:07:36.781 19 W - Select * From HzsClass Order By sortid Desc
+17:07:36.781 19 W - Select * From HzsClass Order By sortid Desc
+17:07:36.781 19 W - Select * From TradeSort Order By sortid Desc
+17:07:38.703 19 W - Select * From HzsArea Order By id Desc
+17:07:38.765 19 W - Select * From HzsArea Order By id Desc
+17:07:38.843 19 W - Select * From TradeSort Order By sortid Desc
+17:07:38.843 19 W - Select * From TradeSort Order By sortid Desc
+17:07:38.875 19 W - Select * From NewsType Order By id Desc
+17:07:38.875 19 W - Select * From NewsType Order By id Desc
+17:07:38.875 19 W - Select * From HzsClass Order By sortid Desc
+17:07:38.875 19 W - Select * From HzsClass Order By sortid Desc
+17:07:38.906 19 W - Select * From NewsType Order By id Desc
+17:07:40.218 19 W - Select * From HzsArea Order By id Desc
+17:07:40.265 19 W - Select * From HzsArea Order By id Desc
+17:07:40.328 19 W - Select * From TradeSort Order By sortid Desc
+17:07:40.343 19 W - Select * From TradeSort Order By sortid Desc
+17:07:40.359 19 W - Select * From NewsType Order By id Desc
+17:07:40.359 19 W - Select * From NewsType Order By id Desc
+17:07:40.359 19 W - Select * From HzsClass Order By sortid Desc
+17:07:40.359 19 W - Select * From HzsClass Order By sortid Desc
+17:07:40.375 19 W - Select * From HzsClass Order By sortid Desc

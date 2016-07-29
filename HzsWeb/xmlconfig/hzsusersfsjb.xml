@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfHzsUserSfsjb xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <HzsUserSfsjb>
+        <id>1</id>
+        <gname>国家级示范社</gname>
+    </HzsUserSfsjb>
+    <HzsUserSfsjb>
+        <id>2</id>
+        <gname>省级示范社</gname>
+    </HzsUserSfsjb>
+    <HzsUserSfsjb>
+        <id>3</id>
+        <gname>市级示范社</gname>
+    </HzsUserSfsjb>
+    <HzsUserSfsjb>
+        <id>4</id>
+        <gname>县级示范社</gname>
+    </HzsUserSfsjb>
+    <HzsUserSfsjb>
+        <id>5</id>
+        <gname>非示范社</gname>
+    </HzsUserSfsjb>
+</ArrayOfHzsUserSfsjb>

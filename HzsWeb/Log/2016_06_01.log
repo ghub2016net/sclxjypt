@@ -1,0 +1,40 @@
+﻿#Software: WebDev.WebServer
+#ProcessID: 9288
+#AppDomain: eb4301ba-1-131092208765937500
+#FileName: D:\Program Files\Common Files\Microsoft Shared\DevServer\9.0\WebDev.WebServer.EXE
+#BaseDirectory: E:\vs2008_svn签出\四川泸县数字农经网\HzsCms\HzsWeb\
+#CurrentDirectory: E:\vs2008_svn签出\四川泸县数字农经网\HzsCms
+#CommandLine: /port:12701 /path:"E:\vs2008_svn签出\四川泸县数字农经网\HzsCms\HzsWeb" /vpath:"/"
+#ApplicationType: Web
+#CLR: 2.0.50727.3662
+#OS: Windows Server 2003 Standard Service Pack 2, Administrator/SUNSOFT-821E9FB
+#Date: 2016-06-01
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+10:15:04.140 4 W - NewLife.Core v3.9.2013.0907 Build 2013-09-17 17:48:48
+10:15:04.343 4 W - NewLife.XCode v8.9.2013.0909 Build 2013-09-17 17:58:18
+10:15:04.343 4 W - [hzsweb]GetSchema("MetaDataCollections")
+10:15:05.375 4 W - [hzsweb]GetSchema("ReservedWords")
+10:15:05.406 4 W - [hzsweb]GetSchema("Databases", "sclxnjw")
+10:15:08.531 4 W - [hzsweb]GetSchema("Tables")
+10:15:12.484 4 W - [hzsweb]GetSchema("Columns")
+10:15:13.000 4 W - [hzsweb]GetSchema("Indexes")
+10:15:13.062 4 W - [hzsweb]GetSchema("IndexColumns")
+10:15:13.218 4 W - [hzsweb]GetSchema("DataTypes")
+10:15:13.375 4 W - 初始化HzsModel.Models.HzsArea数据
+10:15:13.500 4 W - 开始检查连接[hzsweb/SqlServer]的数据库架构……
+10:15:13.546 4 W - [hzsweb]的所有实体类（19个）：SysLog,HzsGlory,HzsArea,Trade,NewsType,Link,PlacesInfo,NewsInfo,TradeConsult,HzsAddress,TradeSort,HzsGrade,Company,AdminUser,HzsUser,DM_ZZDW,AdminRole,HzsClass,LoginLog
+10:15:13.546 4 W - [hzsweb]需要检查架构的实体类（19个）：SysLog,HzsGlory,HzsArea,Trade,NewsType,Link,PlacesInfo,NewsInfo,TradeConsult,HzsAddress,TradeSort,HzsGrade,Company,AdminUser,HzsUser,DM_ZZDW,AdminRole,HzsClass,LoginLog
+10:15:13.546 4 W - hzsweb待检查表架构的实体个数：19
+10:15:13.640 4 W - 检查连接[hzsweb/SqlServer]的数据库架构耗时00:00:00.1369330
+10:15:13.640 4 W - 一级缓存：关闭缓存
+10:15:13.640 4 W - Select * From HzsArea Order By id Desc
+10:15:13.968 4 W - Select * From HzsArea Order By id Desc
+10:15:14.328 4 W - 初始化HzsModel.Models.TradeSort数据
+10:15:14.328 4 W - Select * From TradeSort Order By sortid Desc
+10:15:14.421 4 W - Select * From TradeSort Order By sortid Desc
+10:15:14.484 4 W - 初始化HzsModel.Models.NewsType数据
+10:15:14.484 4 W - Select * From NewsType Order By id Desc
+10:15:14.531 4 W - Select * From NewsType Order By id Desc
+10:15:14.546 4 W - 初始化HzsModel.Models.HzsClass数据
+10:15:14.546 4 W - Select * From HzsClass Order By sortid Desc
+10:15:14.640 4 W - Select * From HzsClass Order By sortid Desc

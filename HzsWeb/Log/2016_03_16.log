@@ -1,0 +1,1008 @@
+﻿#Software: WebDev.WebServer
+#ProcessID: 9684
+#AppDomain: eb4301ba-1-131025816214062500
+#FileName: D:\Program Files\Common Files\Microsoft Shared\DevServer\9.0\WebDev.WebServer.EXE
+#BaseDirectory: E:\vs2008_svn签出\四川泸县数字农经网\HzsCms\HzsWeb\
+#CurrentDirectory: D:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE
+#CommandLine: /port:1633 /path:"E:\vs2008_svn签出\四川泸县数字农经网\HzsCms\HzsWeb" /vpath:"/"
+#ApplicationType: Web
+#CLR: 2.0.50727.3662
+#OS: Windows Server 2003 Standard Service Pack 2, Administrator/SUNSOFT-821E9FB
+#Date: 2016-03-16
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+14:00:55.984 4 W - NewLife.Core v3.9.2013.0907 Build 2013-09-17 17:48:48
+14:00:56.046 4 W - NewLife.XCode v8.9.2013.0909 Build 2013-09-17 17:58:18
+14:00:56.046 4 W - 导致错误的连接字符串：server=.;uid=sa;pwd=sunsoft;database=sclxnjw;Application Name=XCode_默认网站_hzsweb
+14:00:56.093 4 W - [hzsweb]GetSchema("MetaDataCollections")
+14:00:56.187 4 W - 导致错误的连接字符串：server=.;uid=sa;pwd=sunsoft;database=sclxnjw;application name=XCode_默认网站_hzsweb
+14:00:56.187 4 W - [hzsweb]GetSchema("ReservedWords")
+14:00:56.203 4 W - [hzsweb]GetSchema("Databases", "sclxnjw")
+14:00:56.265 4 W - 创建数据库：hzsweb
+14:00:56.265 4 W - CREATE DATABASE sclxnjw
+14:01:02.203 4 W - [hzsweb]GetSchema("Tables")
+14:01:02.265 4 W - 创建表：HzsArea(区域表)
+14:01:02.312 4 W - [hzsweb]GetSchema("DataTypes")
+14:01:02.375 4 W - Create Table HzsArea(
+	areaid bigint NOT NULL,
+	sortarea nvarchar(50) NOT NULL,
+	longarea nvarchar(100) NULL,
+	fid bigint NOT NULL,
+	grade int NULL,
+	id int IDENTITY(1,1) Primary Key
+)
+14:01:02.468 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'区域表' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsArea'
+14:01:02.578 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'简称' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsArea', @level2type=N'COLUMN',@level2name=N'sortarea'
+14:01:02.578 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'全称' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsArea', @level2type=N'COLUMN',@level2name=N'longarea'
+14:01:02.578 4 W - Create Index IX_HzsArea_sortarea On HzsArea (sortarea)
+14:01:02.593 4 W - Create Index IX_HzsArea_fid On HzsArea (fid)
+14:01:02.593 4 W - Create Unique Index PK_HzsArea_areaid On HzsArea (areaid)
+14:01:02.593 4 W - 初始化HzsModel.Models.HzsArea数据
+14:01:02.625 4 W - 开始检查连接[hzsweb/SqlServer]的数据库架构……
+14:01:02.656 4 W - [hzsweb]的所有实体类（18个）：Link,HzsAddress,SysLog,HzsGrade,AdminRole,HzsUser,LoginLog,Trade,HzsArea,HzsClass,TradeConsult,HzsGlory,Company,AdminUser,TradeSort,NewsType,PlacesInfo,NewsInfo
+14:01:02.656 4 W - [hzsweb]需要检查架构的实体类（18个）：Link,HzsAddress,SysLog,HzsGrade,AdminRole,HzsUser,LoginLog,Trade,HzsArea,HzsClass,TradeConsult,HzsGlory,Company,AdminUser,TradeSort,NewsType,PlacesInfo,NewsInfo
+14:01:02.671 4 W - hzsweb待检查表架构的实体个数：18
+14:01:02.703 4 W - 创建表：Link()
+14:01:02.703 4 W - Create Table Link(
+	id int IDENTITY(1,1) Primary Key,
+	linkType int NULL Default 0,
+	linkName varchar(50) NULL,
+	linkUrl varchar(50) NULL,
+	linkImgurl varchar(100) NULL,
+	addDate datetime NULL Default getdate(),
+	isdel int NULL Default 0
+)
+14:01:02.703 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'0为文字链接1为图片链接  (默认为0)' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Link', @level2type=N'COLUMN',@level2name=N'linkType'
+14:01:02.703 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'友情链接名称' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Link', @level2type=N'COLUMN',@level2name=N'linkName'
+14:01:02.703 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'url链接地址' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Link', @level2type=N'COLUMN',@level2name=N'linkUrl'
+14:01:02.718 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'图片地址' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Link', @level2type=N'COLUMN',@level2name=N'linkImgurl'
+14:01:02.718 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'创建时间' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Link', @level2type=N'COLUMN',@level2name=N'addDate'
+14:01:02.718 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'是否删除(0:否 1:删除)   默认0' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Link', @level2type=N'COLUMN',@level2name=N'isdel'
+14:01:02.718 4 W - 创建表：HzsAddress(合作社地址表)
+14:01:02.718 4 W - Create Table HzsAddress(
+	aid int IDENTITY(1,1) Primary Key,
+	uid int NULL,
+	province int NULL,
+	city int NULL,
+	county int NULL,
+	address varchar(200) NULL,
+	isdefault smallint NULL Default 0
+)
+14:01:02.718 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'合作社地址表' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsAddress'
+14:01:02.718 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'0:初始为0 。   1:为当前默认' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsAddress', @level2type=N'COLUMN',@level2name=N'isdefault'
+14:01:02.718 4 W - Create Index HzsUser_HzsAddress_r_FK On HzsAddress (uid)
+14:01:02.718 4 W - 创建表：SysLog()
+14:01:02.718 4 W - Create Table SysLog(
+	logValue nvarchar(200) NULL,
+	operate nvarchar(50) NULL,
+	editor nvarchar(50) NULL,
+	ip nvarchar(100) NULL,
+	logType int NULL,
+	addtime datetime NULL Default getdate(),
+	adminid int NULL,
+	id bigint IDENTITY(1,1) Primary Key
+)
+14:01:02.734 4 W - Create Index IX_SysLog_logType On SysLog (logType)
+14:01:02.750 4 W - 创建表：HzsGrade(评价表)
+14:01:02.750 4 W - Create Table HzsGrade(
+	uid int NOT NULL,
+	grade smallint NOT NULL,
+	intro nvarchar(1000) NULL,
+	ip nvarchar(50) NOT NULL,
+	isvefity smallint NOT NULL Default 10,
+	addtime datetime NOT NULL,
+	id int IDENTITY(1,1) Primary Key
+)
+14:01:02.750 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'评价表' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsGrade'
+14:01:02.750 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'10:审核通过 默认。   20:待审核。   30:未审核。   40:未通过' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsGrade', @level2type=N'COLUMN',@level2name=N'isvefity'
+14:01:02.750 4 W - Create Index HzsUser_HzsGrade_r_FK On HzsGrade (uid)
+14:01:02.750 4 W - 创建表：AdminRole(管理员权限)
+14:01:02.750 4 W - Create Table AdminRole(
+	roleid int NULL,
+	menuid int NULL,
+	prmission int NULL,
+	id int IDENTITY(1,1) Primary Key
+)
+14:01:02.750 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'管理员权限' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'AdminRole'
+14:01:02.750 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'允许权限' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'AdminRole', @level2type=N'COLUMN',@level2name=N'prmission'
+14:01:02.750 4 W - Create Index IX_AdminRole_menuid On AdminRole (menuid)
+14:01:02.750 4 W - 创建表：HzsUser(合作社会员表)
+14:01:02.750 4 W - Create Table HzsUser(
+	hname nvarchar(50) NOT NULL,
+	hpwd nvarchar(100) NOT NULL,
+	email nvarchar(200) NULL,
+	sex smallint NULL Default 1,
+	htype smallint NOT NULL Default 0,
+	linkman nvarchar(50) NULL,
+	corpname nvarchar(100) NULL,
+	tel nvarchar(50) NULL,
+	fax nvarchar(50) NULL,
+	province bigint NULL Default 0,
+	city bigint NULL Default 0,
+	county bigint NULL Default 0,
+	address nvarchar(300) NULL,
+	zipcode nvarchar(100) NULL,
+	[scope] nvarchar(1000) NULL,
+	corppic nvarchar(200) NULL,
+	cropregtime varchar(30) NULL,
+	licence nvarchar(200) NULL,
+	regip nvarchar(50) NULL,
+	isverify smallint NULL Default 10,
+	hzslevel smallint NULL Default 0,
+	hzsintro nvarchar(300) NULL,
+	skin varchar(200) NULL,
+	lasttime varchar(50) NULL,
+	mobile nvarchar(50) NULL,
+	qq nvarchar(200) NULL,
+	isdel smallint NULL Default 0,
+	addtime datetime NULL,
+	grade numeric NULL Default 0,
+	tjgrade smallint NULL Default 0,
+	uid int IDENTITY(1,1) Primary Key,
+	companyimg nvarchar(200) NULL,
+	hzstjid nvarchar(100) NULL,
+	hzstjname nvarchar(100) NULL,
+	hzstjpwd nvarchar(100) NULL,
+	hzsboss nvarchar(50) NULL,
+	hzslevellasttime varchar(50) NULL,
+	hzsdj smallint NULL Default 0,
+	sfsjb smallint NULL Default 0,
+	submitverify smallint NULL Default 0,
+	ishot smallint NULL Default 0,
+	hzsbigclass int NULL Default 0,
+	hzssmallclass int NULL Default 0
+)
+14:01:02.765 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'合作社会员表' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsUser'
+14:01:02.765 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'1:男 默认。   2:女' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsUser', @level2type=N'COLUMN',@level2name=N'sex'
+14:01:02.765 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'经营范围' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsUser', @level2type=N'COLUMN',@level2name=N'scope'
+14:01:02.765 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'许可证' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsUser', @level2type=N'COLUMN',@level2name=N'licence'
+14:01:02.765 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'10:审核通过 默认。   20:待审核。   30:未审核。   40:未通过' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsUser', @level2type=N'COLUMN',@level2name=N'isverify'
+14:01:02.765 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'存放企业黄页样式（.css文件）路径' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsUser', @level2type=N'COLUMN',@level2name=N'skin'
+14:01:02.765 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'0:未操作 默认。   1:删除' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsUser', @level2type=N'COLUMN',@level2name=N'isdel'
+14:01:02.765 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'平均评级' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsUser', @level2type=N'COLUMN',@level2name=N'grade'
+14:01:02.765 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'统计合作社等级' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsUser', @level2type=N'COLUMN',@level2name=N'tjgrade'
+14:01:02.765 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'合作社统计系统中的ID' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsUser', @level2type=N'COLUMN',@level2name=N'hzstjid'
+14:01:02.765 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'合作社统计用户' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsUser', @level2type=N'COLUMN',@level2name=N'hzstjname'
+14:01:02.765 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'合作社统计用户密码' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsUser', @level2type=N'COLUMN',@level2name=N'hzstjpwd'
+14:01:02.765 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'合作社级别' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsUser', @level2type=N'COLUMN',@level2name=N'hzsdj'
+14:01:02.765 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'示范社级别' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsUser', @level2type=N'COLUMN',@level2name=N'sfsjb'
+14:01:02.765 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'提交合作社统计平台的审核' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsUser', @level2type=N'COLUMN',@level2name=N'submitverify'
+14:01:02.765 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'推荐合作社  0不推荐' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsUser', @level2type=N'COLUMN',@level2name=N'ishot'
+14:01:02.765 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'合作社大类  HzsClass表' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsUser', @level2type=N'COLUMN',@level2name=N'hzsbigclass'
+14:01:02.765 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'合作社小类  HzsClass表' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsUser', @level2type=N'COLUMN',@level2name=N'hzssmallclass'
+14:01:02.765 4 W - Create Index IX_HzsUser_isverify On HzsUser (isverify)
+14:01:02.765 4 W - 创建表：LoginLog()
+14:01:02.765 4 W - Create Table LoginLog(
+	adminid int NULL,
+	adminname nvarchar(50) NULL,
+	remark nvarchar(200) NULL,
+	logintime datetime NULL Default getdate(),
+	loginip nvarchar(50) NULL,
+	ltype smallint NULL,
+	id int IDENTITY(1,1) Primary Key,
+	islogin smallint NULL Default 0
+)
+14:01:02.765 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'区分管理员和会员 1:admin  2:hzsuser' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'LoginLog', @level2type=N'COLUMN',@level2name=N'ltype'
+14:01:02.765 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'登陆是否成功 0:yes  1:no' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'LoginLog', @level2type=N'COLUMN',@level2name=N'islogin'
+14:01:02.781 4 W - Create Index IX_LoginLog_adminid On LoginLog (adminid)
+14:01:02.781 4 W - Create Index IX_LoginLog_islogin On LoginLog (islogin)
+14:01:02.781 4 W - Create Index IX_LoginLog_ltype On LoginLog (ltype)
+14:01:02.781 4 W - 创建表：Trade(供求交易信息)
+14:01:02.781 4 W - Create Table Trade(
+	uid int NOT NULL,
+	tradetype smallint NOT NULL Default 10,
+	name nvarchar(200) NULL,
+	ptype int NULL Default 0,
+	ptype2 int NULL Default 0,
+	title nvarchar(200) NULL,
+	tpic nvarchar(200) NULL,
+	pic2 nvarchar(200) NULL,
+	pic3 nvarchar(200) NULL,
+	price money NULL Default 0,
+	units nvarchar(50) NULL,
+	smallamount varchar(20) NULL,
+	bigamount nvarchar(50) NULL,
+	amountunits nvarchar(20) NULL,
+	brand nvarchar(50) NULL,
+	intro nvarchar(1000) NULL,
+	ishot smallint NULL Default 0,
+	isverify smallint NULL Default 10,
+	addtime datetime NOT NULL,
+	province bigint NULL Default 0,
+	city bigint NULL,
+	county bigint NULL Default 0,
+	address nvarchar(200) NULL,
+	click int NOT NULL Default 0,
+	today int NULL Default 0,
+	daytime datetime NULL,
+	id int IDENTITY(1,1) Primary Key,
+	content nvarchar(MAX) NULL,
+	htmlpath nvarchar(100) NULL
+)
+14:01:02.781 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'供求交易信息' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Trade'
+14:01:02.781 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'10:供应  默认。   20:求购。   30:合作' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Trade', @level2type=N'COLUMN',@level2name=N'tradetype'
+14:01:02.781 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'价格默认0' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Trade', @level2type=N'COLUMN',@level2name=N'price'
+14:01:02.812 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'对应价格单位' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Trade', @level2type=N'COLUMN',@level2name=N'units'
+14:01:02.812 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'最小供应量' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Trade', @level2type=N'COLUMN',@level2name=N'smallamount'
+14:01:02.812 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'最大供应量' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Trade', @level2type=N'COLUMN',@level2name=N'bigamount'
+14:01:02.812 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'对应数量单位' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Trade', @level2type=N'COLUMN',@level2name=N'amountunits'
+14:01:02.812 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'产品品牌' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Trade', @level2type=N'COLUMN',@level2name=N'brand'
+14:01:02.812 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'简单介绍' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Trade', @level2type=N'COLUMN',@level2name=N'intro'
+14:01:02.812 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'0:默认。   1:推荐产品' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Trade', @level2type=N'COLUMN',@level2name=N'ishot'
+14:01:02.812 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'10:审核通过 默认。   20:待审核。   30:未审核。   40:未通过' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Trade', @level2type=N'COLUMN',@level2name=N'isverify'
+14:01:02.828 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'默认0' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Trade', @level2type=N'COLUMN',@level2name=N'click'
+14:01:02.828 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'到期时间type' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Trade', @level2type=N'COLUMN',@level2name=N'today'
+14:01:02.828 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'到期时间' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Trade', @level2type=N'COLUMN',@level2name=N'daytime'
+14:01:02.828 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'主键自增ID' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Trade', @level2type=N'COLUMN',@level2name=N'id'
+14:01:02.828 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'内容' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Trade', @level2type=N'COLUMN',@level2name=N'content'
+14:01:02.828 4 W - Create Index HzsUser_Trade_r_FK On Trade (uid)
+14:01:02.828 4 W - 创建表：HzsArea(区域表)
+14:01:02.828 4 W - Create Table HzsArea(
+	areaid bigint NOT NULL,
+	sortarea nvarchar(50) NOT NULL,
+	longarea nvarchar(100) NULL,
+	fid bigint NOT NULL,
+	grade int NULL,
+	id int IDENTITY(1,1) Primary Key
+)
+14:01:02.906 4 W - 修改表CreateTable失败！数据库中已存在名为 'HzsArea' 的对象。[SQL:
+Create Table HzsArea(
+	areaid bigint NOT NULL,
+	sortarea nvarchar(50) NOT NULL,
+	longarea nvarchar(100) NULL,
+	fid bigint NOT NULL,
+	grade int NULL,
+	id int IDENTITY(1,1) Primary Key
+)
+][DB:hzsweb/SqlServer]
+14:01:02.906 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'区域表' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsArea'
+14:01:02.953 4 W - 修改表AddTableDescription失败！无法添加属性。'dbo.HzsArea' 已存在属性 'MS_Description'。[SQL:EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'区域表' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsArea'][DB:hzsweb/SqlServer]
+14:01:02.953 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'简称' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsArea', @level2type=N'COLUMN',@level2name=N'sortarea'
+14:01:02.953 4 W - 修改表AddColumnDescription失败！无法添加属性。'dbo.HzsArea.sortarea' 已存在属性 'MS_Description'。[SQL:EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'简称' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsArea', @level2type=N'COLUMN',@level2name=N'sortarea'][DB:hzsweb/SqlServer]
+14:01:02.953 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'全称' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsArea', @level2type=N'COLUMN',@level2name=N'longarea'
+14:01:02.953 4 W - 修改表AddColumnDescription失败！无法添加属性。'dbo.HzsArea.longarea' 已存在属性 'MS_Description'。[SQL:EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'全称' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsArea', @level2type=N'COLUMN',@level2name=N'longarea'][DB:hzsweb/SqlServer]
+14:01:02.953 4 W - Create Index IX_HzsArea_sortarea On HzsArea (sortarea)
+14:01:02.984 4 W - 修改表CreateIndex失败！操作失败，因为在 表 'HzsArea' 上已存在名称为 'IX_HzsArea_sortarea' 的索引或统计信息。[SQL:Create Index IX_HzsArea_sortarea On HzsArea (sortarea)][DB:hzsweb/SqlServer]
+14:01:02.984 4 W - Create Index IX_HzsArea_fid On HzsArea (fid)
+14:01:02.984 4 W - 修改表CreateIndex失败！操作失败，因为在 表 'HzsArea' 上已存在名称为 'IX_HzsArea_fid' 的索引或统计信息。[SQL:Create Index IX_HzsArea_fid On HzsArea (fid)][DB:hzsweb/SqlServer]
+14:01:02.984 4 W - Create Unique Index PK_HzsArea_areaid On HzsArea (areaid)
+14:01:02.984 4 W - 修改表CreateIndex失败！操作失败，因为在 表 'HzsArea' 上已存在名称为 'PK_HzsArea_areaid' 的索引或统计信息。[SQL:Create Unique Index PK_HzsArea_areaid On HzsArea (areaid)][DB:hzsweb/SqlServer]
+14:01:02.984 4 W - 创建表：HzsClass(合作社分类)
+14:01:02.984 4 W - Create Table HzsClass(
+	hid int NOT NULL Default 0,
+	sortid int IDENTITY(1,1) NOT NULL,
+	[depth] smallint NULL,
+	[array] int NULL,
+	cname nvarchar(50) NULL,
+	pid int NULL,
+	ispublic smallint NULL,
+	isrose int NULL
+); 
+Alter Table HzsClass Add Constraint PK_HzsClass Primary Key Clustered(hid,sortid)
+14:01:03.031 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'合作社分类' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsClass'
+14:01:03.031 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'主键ID，查询时使用此ID' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsClass', @level2type=N'COLUMN',@level2name=N'hid'
+14:01:03.031 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'序号ID，不使用' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsClass', @level2type=N'COLUMN',@level2name=N'sortid'
+14:01:03.031 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'0:默认公开。   1:不公开' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsClass', @level2type=N'COLUMN',@level2name=N'ispublic'
+14:01:03.031 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'默认0 ' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsClass', @level2type=N'COLUMN',@level2name=N'isrose'
+14:01:03.031 4 W - 创建表：TradeConsult(供求信息咨询表)
+14:01:03.031 4 W - Create Table TradeConsult(
+	title nvarchar(200) NULL,
+	intro nvarchar(1024) NULL,
+	tid int NOT NULL,
+	email nvarchar(100) NULL,
+	tel nvarchar(50) NULL,
+	consultname nvarchar(50) NULL,
+	consultuid int NOT NULL,
+	replyintro nvarchar(1024) NULL,
+	addtime datetime NULL Default getdate(),
+	replytime datetime NULL,
+	replyuid int NOT NULL,
+	ispublic smallint NULL Default 0,
+	consultid bigint IDENTITY(1,1) Primary Key
+)
+14:01:03.031 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'供求信息咨询表' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TradeConsult'
+14:01:03.031 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'供求信息id' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TradeConsult', @level2type=N'COLUMN',@level2name=N'tid'
+14:01:03.046 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'回复人' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TradeConsult', @level2type=N'COLUMN',@level2name=N'consultname'
+14:01:03.046 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'咨询人Id' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TradeConsult', @level2type=N'COLUMN',@level2name=N'consultuid'
+14:01:03.046 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'合作社用户ID 外键' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TradeConsult', @level2type=N'COLUMN',@level2name=N'replyuid'
+14:01:03.046 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'1:不公开。   0:默认公开' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TradeConsult', @level2type=N'COLUMN',@level2name=N'ispublic'
+14:01:03.046 4 W - 创建表：HzsGlory(合作社会员荣誉证书表)
+14:01:03.046 4 W - Create Table HzsGlory(
+	uid int NOT NULL,
+	title nvarchar(100) NOT NULL,
+	intro text NULL,
+	pic nvarchar(200) NULL,
+	isverify smallint NOT NULL Default 10,
+	addtime datetime NOT NULL,
+	id int IDENTITY(1,1) Primary Key
+)
+14:01:03.046 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'合作社会员荣誉证书表' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsGlory'
+14:01:03.046 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'10:审核通过 默认。   20:待审核。   30:未审核。   40:未通过' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsGlory', @level2type=N'COLUMN',@level2name=N'isverify'
+14:01:03.046 4 W - Create Index HzsUser_HzsGlory_r_FK On HzsGlory (uid)
+14:01:03.046 4 W - 创建表：Company(合作社新闻展示表)
+14:01:03.046 4 W - Create Table Company(
+	uid int NOT NULL,
+	typeid smallint NULL,
+	title nvarchar(200) NOT NULL,
+	content ntext NULL,
+	intro ntext NULL,
+	pic nvarchar(200) NULL,
+	pic2 nvarchar(200) NULL,
+	pic3 nvarchar(200) NULL,
+	click bigint NOT NULL Default 0,
+	addtime datetime NOT NULL,
+	id bigint IDENTITY(1,1) Primary Key,
+	isonepage smallint NULL
+)
+14:01:03.046 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'合作社新闻展示表' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Company'
+14:01:03.046 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'默认0' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Company', @level2type=N'COLUMN',@level2name=N'click'
+14:01:03.046 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'是否单页新闻类型 默认0（不是） 例如企业介绍为单页 1：是' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Company', @level2type=N'COLUMN',@level2name=N'isonepage'
+14:01:03.046 4 W - Create Index HzsUser_Company_r_FK On Company (uid)
+14:01:03.046 4 W - 创建表：AdminUser(管理员用户)
+14:01:03.046 4 W - Create Table AdminUser(
+	utype smallint NOT NULL Default 1,
+	name nvarchar(50) NOT NULL,
+	apwd nvarchar(50) NOT NULL,
+	email nvarchar(100) NULL,
+	isdel smallint NOT NULL Default 0,
+	addtime datetime NOT NULL Default getdate(),
+	adminid int IDENTITY(1,1) Primary Key
+)
+14:01:03.046 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'管理员用户' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'AdminUser'
+14:01:03.046 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'默认1' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'AdminUser', @level2type=N'COLUMN',@level2name=N'utype'
+14:01:03.046 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'管理员名称' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'AdminUser', @level2type=N'COLUMN',@level2name=N'name'
+14:01:03.062 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'账户状态' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'AdminUser', @level2type=N'COLUMN',@level2name=N'isdel'
+14:01:03.062 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'创建时间' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'AdminUser', @level2type=N'COLUMN',@level2name=N'addtime'
+14:01:03.062 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'主键 自增ID' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'AdminUser', @level2type=N'COLUMN',@level2name=N'adminid'
+14:01:03.062 4 W - Create Index IX_AdminUser_email On AdminUser (email)
+14:01:03.062 4 W - Create Index IX_AdminUser_isdel On AdminUser (isdel)
+14:01:03.062 4 W - Create Index IX_AdminUser_name On AdminUser (name)
+14:01:03.062 4 W - 创建表：TradeSort(供求类型表)
+14:01:03.062 4 W - Create Table TradeSort(
+	tid int NOT NULL Default 0,
+	sortid int IDENTITY(1,1) NOT NULL,
+	[depth] smallint NOT NULL,
+	[array] int NOT NULL,
+	sname nvarchar(50) NOT NULL,
+	pid int NOT NULL Default 0,
+	ispublic smallint NULL Default 0,
+	isrose int NULL Default 0
+); 
+Alter Table TradeSort Add Constraint PK_TradeSort Primary Key Clustered(tid,sortid)
+14:01:03.062 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'供求类型表' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TradeSort'
+14:01:03.062 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'主键ID，查询时使用此ID' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TradeSort', @level2type=N'COLUMN',@level2name=N'tid'
+14:01:03.062 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'序号ID，不使用' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TradeSort', @level2type=N'COLUMN',@level2name=N'sortid'
+14:01:03.062 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'查询ID的父ID默认0' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TradeSort', @level2type=N'COLUMN',@level2name=N'pid'
+14:01:03.062 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'0:默认公开。   1:不公开' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TradeSort', @level2type=N'COLUMN',@level2name=N'ispublic'
+14:01:03.062 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'默认0 所以权限' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TradeSort', @level2type=N'COLUMN',@level2name=N'isrose'
+14:01:03.062 4 W - Create Index IX_TradeSort_ispublic On TradeSort (ispublic)
+14:01:03.062 4 W - 创建表：NewsType(新闻类型表)
+14:01:03.062 4 W - Create Table NewsType(
+	ntypeid int NULL,
+	pid int NOT NULL,
+	[array] int NOT NULL,
+	name nvarchar(100) NOT NULL,
+	intro nvarchar(100) NULL,
+	editor nvarchar(50) NULL,
+	isdel smallint NULL Default 0,
+	addtime datetime NULL Default getdate(),
+	ispublic smallint NOT NULL Default 0,
+	id int IDENTITY(1,1) Primary Key
+)
+14:01:03.093 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'新闻类型表' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'NewsType'
+14:01:03.093 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'类型使用的ID' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'NewsType', @level2type=N'COLUMN',@level2name=N'ntypeid'
+14:01:03.093 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'0:默认。   1:删除，实际效果不再页面显示' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'NewsType', @level2type=N'COLUMN',@level2name=N'isdel'
+14:01:03.093 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'0:公开默认。   1:不公开' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'NewsType', @level2type=N'COLUMN',@level2name=N'ispublic'
+14:01:03.093 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'自增排序' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'NewsType', @level2type=N'COLUMN',@level2name=N'id'
+14:01:03.093 4 W - Create Unique Index IX_NewsType_ntypeid On NewsType (ntypeid)
+14:01:03.093 4 W - Create Index IX_NewsType_ispublic On NewsType (ispublic)
+14:01:03.093 4 W - 创建表：PlacesInfo(地方信息)
+14:01:03.093 4 W - Create Table PlacesInfo(
+	title varchar(200) NOT NULL,
+	content text NULL,
+	typeid int NOT NULL,
+	source nvarchar(100) NULL,
+	areacode nvarchar(100) NULL,
+	pic nvarchar(100) NULL,
+	ishot smallint NULL,
+	areaid bigint NOT NULL,
+	isdel smallint NOT NULL Default 0,
+	addtime datetime NOT NULL,
+	adminid int NOT NULL,
+	id int IDENTITY(1,1) Primary Key,
+	intro nvarchar(1000) NULL,
+	click int NULL Default 0,
+	isverify smallint NULL Default 10,
+	editor varchar(50) NULL,
+	seotitle nvarchar(200) NULL,
+	seointro nvarchar(500) NULL,
+	seokeyword nvarchar(300) NULL,
+	htmlpath nvarchar(100) NULL
+)
+14:01:03.093 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'地方信息' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'PlacesInfo'
+14:01:03.093 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'0:默认。   1:删除' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'PlacesInfo', @level2type=N'COLUMN',@level2name=N'isdel'
+14:01:03.093 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'内容简介' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'PlacesInfo', @level2type=N'COLUMN',@level2name=N'intro'
+14:01:03.093 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'点击量' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'PlacesInfo', @level2type=N'COLUMN',@level2name=N'click'
+14:01:03.109 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'10审核 20待审核 40未审核' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'PlacesInfo', @level2type=N'COLUMN',@level2name=N'isverify'
+14:01:03.109 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'静态页地址' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'PlacesInfo', @level2type=N'COLUMN',@level2name=N'htmlpath'
+14:01:03.109 4 W - Create Index IX_PlacesInfo_title On PlacesInfo (title)
+14:01:03.109 4 W - Create Index IX_PlacesInfo_areaid On PlacesInfo (areaid)
+14:01:03.109 4 W - Create Index IX_PlacesInfo_typeid On PlacesInfo (typeid)
+14:01:03.109 4 W - 创建表：NewsInfo(新闻信息表)
+14:01:03.109 4 W - Create Table NewsInfo(
+	id int IDENTITY(1,1) Primary Key,
+	adminid int NULL,
+	title varchar(200) NULL,
+	content ntext NULL,
+	nimg varchar(200) NULL,
+	nvideo varchar(200) NULL,
+	nvideoimg varchar(200) NULL,
+	ishot smallint NULL Default 0,
+	ispublic smallint NULL Default 0,
+	isverify smallint NULL Default 1,
+	editor varchar(50) NULL,
+	addtime datetime NULL Default getdate(),
+	ntypeid int NULL,
+	intro nvarchar(MAX) NULL,
+	click int NULL,
+	seotitle nvarchar(300) NULL,
+	seointro nvarchar(500) NULL,
+	seokeyword nvarchar(300) NULL,
+	htmlpath nvarchar(100) NULL
+)
+14:01:03.109 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'新闻信息表' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'NewsInfo'
+14:01:03.109 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'主键 自增ID' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'NewsInfo', @level2type=N'COLUMN',@level2name=N'adminid'
+14:01:03.109 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'0:默认 否。      推荐类型10 20 30 40 50.....' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'NewsInfo', @level2type=N'COLUMN',@level2name=N'ishot'
+14:01:03.109 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'0:公开默认。   1:不公开' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'NewsInfo', @level2type=N'COLUMN',@level2name=N'ispublic'
+14:01:03.109 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'0:未审核。   1:默认 审核通过' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'NewsInfo', @level2type=N'COLUMN',@level2name=N'isverify'
+14:01:03.125 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'添加时间' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'NewsInfo', @level2type=N'COLUMN',@level2name=N'addtime'
+14:01:03.125 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'新闻类型' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'NewsInfo', @level2type=N'COLUMN',@level2name=N'ntypeid'
+14:01:03.125 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'html' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'NewsInfo', @level2type=N'COLUMN',@level2name=N'htmlpath'
+14:01:03.125 4 W - Create Index IX_NewsInfo_click On NewsInfo (click)
+14:01:03.125 4 W - Create Index IX_NewsInfo_ishot On NewsInfo (ishot)
+14:01:03.125 4 W - Create Index adminuser_news_r_FK On NewsInfo (adminid)
+14:01:03.125 4 W - Create Index IX_NewsInfo_isverify On NewsInfo (isverify)
+14:01:03.125 4 W - Create Index IX_NewsInfo_title On NewsInfo (title)
+14:01:03.140 4 W - 检查连接[hzsweb/SqlServer]的数据库架构耗时00:00:00.5143963
+14:01:03.140 4 W - 一级缓存：关闭缓存
+14:01:03.140 4 W - Select * From HzsArea Order By id Desc
+14:01:22.218 4 W - Select * From HzsArea Order By id Desc
+14:01:22.359 4 W - 初始化HzsModel.Models.TradeSort数据
+14:01:22.359 4 W - Select * From TradeSort Order By sortid Desc
+14:01:22.765 4 W - Select * From TradeSort Order By sortid Desc
+14:01:22.796 4 W - 初始化HzsModel.Models.NewsType数据
+14:01:22.796 4 W - Select * From NewsType Order By id Desc
+14:01:23.468 4 W - Select * From NewsType Order By id Desc
+14:01:23.578 4 W - 初始化HzsModel.Models.HzsClass数据
+14:01:23.578 4 W - Select * From HzsClass Order By sortid Desc
+14:01:24.265 4 W - Select * From HzsClass Order By sortid Desc
+
+#Software: WebDev.WebServer
+#ProcessID: 9856
+#AppDomain: eb4301ba-1-131025831282656250
+#FileName: D:\Program Files\Common Files\Microsoft Shared\DevServer\9.0\WebDev.WebServer.EXE
+#BaseDirectory: E:\vs2008_svn签出\四川泸县数字农经网\HzsCms\HzsWeb\
+#CurrentDirectory: D:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE
+#CommandLine: /port:1633 /path:"E:\vs2008_svn签出\四川泸县数字农经网\HzsCms\HzsWeb" /vpath:"/"
+#ApplicationType: Web
+#CLR: 2.0.50727.3662
+#OS: Windows Server 2003 Standard Service Pack 2, Administrator/SUNSOFT-821E9FB
+#Date: 2016-03-16
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+14:25:32.265 4 W - NewLife.Core v3.9.2013.0907 Build 2013-09-17 17:48:48
+14:25:32.281 4 W - NewLife.XCode v8.9.2013.0909 Build 2013-09-17 17:58:18
+14:25:32.281 4 W - 导致错误的连接字符串：server=.;uid=sa;pwd=sunsoft;database=sclxnjw;Application Name=XCode_默认网站_hzsweb
+14:25:32.296 4 W - [hzsweb]GetSchema("MetaDataCollections")
+14:25:32.328 4 W - 导致错误的连接字符串：server=.;uid=sa;pwd=sunsoft;database=sclxnjw;application name=XCode_默认网站_hzsweb
+14:25:32.328 4 W - [hzsweb]GetSchema("ReservedWords")
+14:25:32.359 4 W - [hzsweb]GetSchema("Databases", "sclxnjw")
+14:25:32.359 4 W - 创建数据库：hzsweb
+14:25:32.375 4 W - CREATE DATABASE sclxnjw
+14:25:38.031 4 W - [hzsweb]GetSchema("Tables")
+14:25:38.078 4 W - 创建表：HzsArea(区域表)
+14:25:38.093 4 W - [hzsweb]GetSchema("DataTypes")
+14:25:38.140 4 W - Create Table HzsArea(
+	areaid bigint NOT NULL,
+	sortarea nvarchar(50) NOT NULL,
+	longarea nvarchar(100) NULL,
+	fid bigint NOT NULL,
+	grade int NULL,
+	id int IDENTITY(1,1) Primary Key
+)
+14:25:38.140 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'区域表' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsArea'
+14:25:38.140 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'简称' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsArea', @level2type=N'COLUMN',@level2name=N'sortarea'
+14:25:38.140 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'全称' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsArea', @level2type=N'COLUMN',@level2name=N'longarea'
+14:25:38.140 4 W - Create Index IX_HzsArea_sortarea On HzsArea (sortarea)
+14:25:38.171 4 W - Create Index IX_HzsArea_fid On HzsArea (fid)
+14:25:38.171 4 W - Create Unique Index PK_HzsArea_areaid On HzsArea (areaid)
+14:25:38.171 4 W - 初始化HzsModel.Models.HzsArea数据
+14:25:38.187 4 W - 开始检查连接[hzsweb/SqlServer]的数据库架构……
+14:25:38.234 4 W - [hzsweb]的所有实体类（18个）：Link,HzsAddress,SysLog,HzsGrade,AdminRole,HzsUser,LoginLog,Trade,HzsArea,HzsClass,TradeConsult,HzsGlory,Company,AdminUser,TradeSort,NewsType,PlacesInfo,NewsInfo
+14:25:38.234 4 W - [hzsweb]需要检查架构的实体类（18个）：Link,HzsAddress,SysLog,HzsGrade,AdminRole,HzsUser,LoginLog,Trade,HzsArea,HzsClass,TradeConsult,HzsGlory,Company,AdminUser,TradeSort,NewsType,PlacesInfo,NewsInfo
+14:25:38.234 4 W - hzsweb待检查表架构的实体个数：18
+14:25:38.234 4 W - 创建表：Link()
+14:25:38.234 4 W - Create Table Link(
+	id int IDENTITY(1,1) Primary Key,
+	linkType int NULL Default 0,
+	linkName varchar(50) NULL,
+	linkUrl varchar(50) NULL,
+	linkImgurl varchar(100) NULL,
+	addDate datetime NULL Default getdate(),
+	isdel int NULL Default 0
+)
+14:25:38.250 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'0为文字链接1为图片链接  (默认为0)' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Link', @level2type=N'COLUMN',@level2name=N'linkType'
+14:25:38.250 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'友情链接名称' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Link', @level2type=N'COLUMN',@level2name=N'linkName'
+14:25:38.250 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'url链接地址' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Link', @level2type=N'COLUMN',@level2name=N'linkUrl'
+14:25:38.250 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'图片地址' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Link', @level2type=N'COLUMN',@level2name=N'linkImgurl'
+14:25:38.250 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'创建时间' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Link', @level2type=N'COLUMN',@level2name=N'addDate'
+14:25:38.250 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'是否删除(0:否 1:删除)   默认0' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Link', @level2type=N'COLUMN',@level2name=N'isdel'
+14:25:38.250 4 W - 创建表：HzsAddress(合作社地址表)
+14:25:38.250 4 W - Create Table HzsAddress(
+	aid int IDENTITY(1,1) Primary Key,
+	uid int NULL,
+	province int NULL,
+	city int NULL,
+	county int NULL,
+	address varchar(200) NULL,
+	isdefault smallint NULL Default 0
+)
+14:25:38.250 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'合作社地址表' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsAddress'
+14:25:38.250 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'0:初始为0 。   1:为当前默认' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsAddress', @level2type=N'COLUMN',@level2name=N'isdefault'
+14:25:38.250 4 W - Create Index HzsUser_HzsAddress_r_FK On HzsAddress (uid)
+14:25:38.250 4 W - 创建表：SysLog()
+14:25:38.250 4 W - Create Table SysLog(
+	logValue nvarchar(200) NULL,
+	operate nvarchar(50) NULL,
+	editor nvarchar(50) NULL,
+	ip nvarchar(100) NULL,
+	logType int NULL,
+	addtime datetime NULL Default getdate(),
+	adminid int NULL,
+	id bigint IDENTITY(1,1) Primary Key
+)
+14:25:38.250 4 W - Create Index IX_SysLog_logType On SysLog (logType)
+14:25:38.250 4 W - 创建表：HzsGrade(评价表)
+14:25:38.250 4 W - Create Table HzsGrade(
+	uid int NOT NULL,
+	grade smallint NOT NULL,
+	intro nvarchar(1000) NULL,
+	ip nvarchar(50) NOT NULL,
+	isvefity smallint NOT NULL Default 10,
+	addtime datetime NOT NULL,
+	id int IDENTITY(1,1) Primary Key
+)
+14:25:38.250 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'评价表' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsGrade'
+14:25:38.250 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'10:审核通过 默认。   20:待审核。   30:未审核。   40:未通过' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsGrade', @level2type=N'COLUMN',@level2name=N'isvefity'
+14:25:38.250 4 W - Create Index HzsUser_HzsGrade_r_FK On HzsGrade (uid)
+14:25:38.250 4 W - 创建表：AdminRole(管理员权限)
+14:25:38.250 4 W - Create Table AdminRole(
+	roleid int NULL,
+	menuid int NULL,
+	prmission int NULL,
+	id int IDENTITY(1,1) Primary Key
+)
+14:25:38.250 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'管理员权限' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'AdminRole'
+14:25:38.250 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'允许权限' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'AdminRole', @level2type=N'COLUMN',@level2name=N'prmission'
+14:25:38.265 4 W - Create Index IX_AdminRole_menuid On AdminRole (menuid)
+14:25:38.265 4 W - 创建表：HzsUser(合作社会员表)
+14:25:38.265 4 W - Create Table HzsUser(
+	hname nvarchar(50) NOT NULL,
+	hpwd nvarchar(100) NOT NULL,
+	email nvarchar(200) NULL,
+	sex smallint NULL Default 1,
+	htype smallint NOT NULL Default 0,
+	linkman nvarchar(50) NULL,
+	corpname nvarchar(100) NULL,
+	tel nvarchar(50) NULL,
+	fax nvarchar(50) NULL,
+	province bigint NULL Default 0,
+	city bigint NULL Default 0,
+	county bigint NULL Default 0,
+	address nvarchar(300) NULL,
+	zipcode nvarchar(100) NULL,
+	[scope] nvarchar(1000) NULL,
+	corppic nvarchar(200) NULL,
+	cropregtime varchar(30) NULL,
+	licence nvarchar(200) NULL,
+	regip nvarchar(50) NULL,
+	isverify smallint NULL Default 10,
+	hzslevel smallint NULL Default 0,
+	hzsintro nvarchar(300) NULL,
+	skin varchar(200) NULL,
+	lasttime varchar(50) NULL,
+	mobile nvarchar(50) NULL,
+	qq nvarchar(200) NULL,
+	isdel smallint NULL Default 0,
+	addtime datetime NULL,
+	grade numeric NULL Default 0,
+	tjgrade smallint NULL Default 0,
+	uid int IDENTITY(1,1) Primary Key,
+	companyimg nvarchar(200) NULL,
+	hzstjid nvarchar(100) NULL,
+	hzstjname nvarchar(100) NULL,
+	hzstjpwd nvarchar(100) NULL,
+	hzsboss nvarchar(50) NULL,
+	hzslevellasttime varchar(50) NULL,
+	hzsdj smallint NULL Default 0,
+	sfsjb smallint NULL Default 0,
+	submitverify smallint NULL Default 0,
+	ishot smallint NULL Default 0,
+	hzsbigclass int NULL Default 0,
+	hzssmallclass int NULL Default 0
+)
+14:25:38.265 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'合作社会员表' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsUser'
+14:25:38.265 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'1:男 默认。   2:女' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsUser', @level2type=N'COLUMN',@level2name=N'sex'
+14:25:38.265 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'经营范围' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsUser', @level2type=N'COLUMN',@level2name=N'scope'
+14:25:38.265 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'许可证' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsUser', @level2type=N'COLUMN',@level2name=N'licence'
+14:25:38.265 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'10:审核通过 默认。   20:待审核。   30:未审核。   40:未通过' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsUser', @level2type=N'COLUMN',@level2name=N'isverify'
+14:25:38.265 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'存放企业黄页样式（.css文件）路径' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsUser', @level2type=N'COLUMN',@level2name=N'skin'
+14:25:38.265 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'0:未操作 默认。   1:删除' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsUser', @level2type=N'COLUMN',@level2name=N'isdel'
+14:25:38.265 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'平均评级' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsUser', @level2type=N'COLUMN',@level2name=N'grade'
+14:25:38.265 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'统计合作社等级' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsUser', @level2type=N'COLUMN',@level2name=N'tjgrade'
+14:25:38.265 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'合作社统计系统中的ID' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsUser', @level2type=N'COLUMN',@level2name=N'hzstjid'
+14:25:38.265 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'合作社统计用户' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsUser', @level2type=N'COLUMN',@level2name=N'hzstjname'
+14:25:38.265 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'合作社统计用户密码' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsUser', @level2type=N'COLUMN',@level2name=N'hzstjpwd'
+14:25:38.265 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'合作社级别' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsUser', @level2type=N'COLUMN',@level2name=N'hzsdj'
+14:25:38.265 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'示范社级别' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsUser', @level2type=N'COLUMN',@level2name=N'sfsjb'
+14:25:38.265 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'提交合作社统计平台的审核' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsUser', @level2type=N'COLUMN',@level2name=N'submitverify'
+14:25:38.265 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'推荐合作社  0不推荐' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsUser', @level2type=N'COLUMN',@level2name=N'ishot'
+14:25:38.281 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'合作社大类  HzsClass表' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsUser', @level2type=N'COLUMN',@level2name=N'hzsbigclass'
+14:25:38.281 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'合作社小类  HzsClass表' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsUser', @level2type=N'COLUMN',@level2name=N'hzssmallclass'
+14:25:38.281 4 W - Create Index IX_HzsUser_isverify On HzsUser (isverify)
+14:25:38.281 4 W - 创建表：LoginLog()
+14:25:38.281 4 W - Create Table LoginLog(
+	adminid int NULL,
+	adminname nvarchar(50) NULL,
+	remark nvarchar(200) NULL,
+	logintime datetime NULL Default getdate(),
+	loginip nvarchar(50) NULL,
+	ltype smallint NULL,
+	id int IDENTITY(1,1) Primary Key,
+	islogin smallint NULL Default 0
+)
+14:25:38.281 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'区分管理员和会员 1:admin  2:hzsuser' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'LoginLog', @level2type=N'COLUMN',@level2name=N'ltype'
+14:25:38.281 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'登陆是否成功 0:yes  1:no' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'LoginLog', @level2type=N'COLUMN',@level2name=N'islogin'
+14:25:38.281 4 W - Create Index IX_LoginLog_adminid On LoginLog (adminid)
+14:25:38.281 4 W - Create Index IX_LoginLog_islogin On LoginLog (islogin)
+14:25:38.281 4 W - Create Index IX_LoginLog_ltype On LoginLog (ltype)
+14:25:38.281 4 W - 创建表：Trade(供求交易信息)
+14:25:38.281 4 W - Create Table Trade(
+	uid int NOT NULL,
+	tradetype smallint NOT NULL Default 10,
+	name nvarchar(200) NULL,
+	ptype int NULL Default 0,
+	ptype2 int NULL Default 0,
+	title nvarchar(200) NULL,
+	tpic nvarchar(200) NULL,
+	pic2 nvarchar(200) NULL,
+	pic3 nvarchar(200) NULL,
+	price money NULL Default 0,
+	units nvarchar(50) NULL,
+	smallamount varchar(20) NULL,
+	bigamount nvarchar(50) NULL,
+	amountunits nvarchar(20) NULL,
+	brand nvarchar(50) NULL,
+	intro nvarchar(1000) NULL,
+	ishot smallint NULL Default 0,
+	isverify smallint NULL Default 10,
+	addtime datetime NOT NULL,
+	province bigint NULL Default 0,
+	city bigint NULL,
+	county bigint NULL Default 0,
+	address nvarchar(200) NULL,
+	click int NOT NULL Default 0,
+	today int NULL Default 0,
+	daytime datetime NULL,
+	id int IDENTITY(1,1) Primary Key,
+	content nvarchar(MAX) NULL,
+	htmlpath nvarchar(100) NULL
+)
+14:25:38.281 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'供求交易信息' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Trade'
+14:25:38.296 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'10:供应  默认。   20:求购。   30:合作' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Trade', @level2type=N'COLUMN',@level2name=N'tradetype'
+14:25:38.296 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'价格默认0' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Trade', @level2type=N'COLUMN',@level2name=N'price'
+14:25:38.296 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'对应价格单位' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Trade', @level2type=N'COLUMN',@level2name=N'units'
+14:25:38.296 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'最小供应量' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Trade', @level2type=N'COLUMN',@level2name=N'smallamount'
+14:25:38.296 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'最大供应量' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Trade', @level2type=N'COLUMN',@level2name=N'bigamount'
+14:25:38.296 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'对应数量单位' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Trade', @level2type=N'COLUMN',@level2name=N'amountunits'
+14:25:38.296 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'产品品牌' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Trade', @level2type=N'COLUMN',@level2name=N'brand'
+14:25:38.296 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'简单介绍' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Trade', @level2type=N'COLUMN',@level2name=N'intro'
+14:25:38.296 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'0:默认。   1:推荐产品' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Trade', @level2type=N'COLUMN',@level2name=N'ishot'
+14:25:38.296 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'10:审核通过 默认。   20:待审核。   30:未审核。   40:未通过' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Trade', @level2type=N'COLUMN',@level2name=N'isverify'
+14:25:38.312 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'默认0' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Trade', @level2type=N'COLUMN',@level2name=N'click'
+14:25:38.312 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'到期时间type' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Trade', @level2type=N'COLUMN',@level2name=N'today'
+14:25:38.312 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'到期时间' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Trade', @level2type=N'COLUMN',@level2name=N'daytime'
+14:25:38.312 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'主键自增ID' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Trade', @level2type=N'COLUMN',@level2name=N'id'
+14:25:38.312 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'内容' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Trade', @level2type=N'COLUMN',@level2name=N'content'
+14:25:38.312 4 W - Create Index HzsUser_Trade_r_FK On Trade (uid)
+14:25:38.312 4 W - 创建表：HzsArea(区域表)
+14:25:38.312 4 W - Create Table HzsArea(
+	areaid bigint NOT NULL,
+	sortarea nvarchar(50) NOT NULL,
+	longarea nvarchar(100) NULL,
+	fid bigint NOT NULL,
+	grade int NULL,
+	id int IDENTITY(1,1) Primary Key
+)
+14:25:38.312 4 W - 修改表CreateTable失败！数据库中已存在名为 'HzsArea' 的对象。[SQL:
+Create Table HzsArea(
+	areaid bigint NOT NULL,
+	sortarea nvarchar(50) NOT NULL,
+	longarea nvarchar(100) NULL,
+	fid bigint NOT NULL,
+	grade int NULL,
+	id int IDENTITY(1,1) Primary Key
+)
+][DB:hzsweb/SqlServer]
+14:25:38.312 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'区域表' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsArea'
+14:25:38.312 4 W - 修改表AddTableDescription失败！无法添加属性。'dbo.HzsArea' 已存在属性 'MS_Description'。[SQL:EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'区域表' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsArea'][DB:hzsweb/SqlServer]
+14:25:38.312 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'简称' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsArea', @level2type=N'COLUMN',@level2name=N'sortarea'
+14:25:38.312 4 W - 修改表AddColumnDescription失败！无法添加属性。'dbo.HzsArea.sortarea' 已存在属性 'MS_Description'。[SQL:EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'简称' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsArea', @level2type=N'COLUMN',@level2name=N'sortarea'][DB:hzsweb/SqlServer]
+14:25:38.312 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'全称' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsArea', @level2type=N'COLUMN',@level2name=N'longarea'
+14:25:38.328 4 W - 修改表AddColumnDescription失败！无法添加属性。'dbo.HzsArea.longarea' 已存在属性 'MS_Description'。[SQL:EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'全称' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsArea', @level2type=N'COLUMN',@level2name=N'longarea'][DB:hzsweb/SqlServer]
+14:25:38.328 4 W - Create Index IX_HzsArea_sortarea On HzsArea (sortarea)
+14:25:38.328 4 W - 修改表CreateIndex失败！操作失败，因为在 表 'HzsArea' 上已存在名称为 'IX_HzsArea_sortarea' 的索引或统计信息。[SQL:Create Index IX_HzsArea_sortarea On HzsArea (sortarea)][DB:hzsweb/SqlServer]
+14:25:38.328 4 W - Create Index IX_HzsArea_fid On HzsArea (fid)
+14:25:38.328 4 W - 修改表CreateIndex失败！操作失败，因为在 表 'HzsArea' 上已存在名称为 'IX_HzsArea_fid' 的索引或统计信息。[SQL:Create Index IX_HzsArea_fid On HzsArea (fid)][DB:hzsweb/SqlServer]
+14:25:38.328 4 W - Create Unique Index PK_HzsArea_areaid On HzsArea (areaid)
+14:25:38.328 4 W - 修改表CreateIndex失败！操作失败，因为在 表 'HzsArea' 上已存在名称为 'PK_HzsArea_areaid' 的索引或统计信息。[SQL:Create Unique Index PK_HzsArea_areaid On HzsArea (areaid)][DB:hzsweb/SqlServer]
+14:25:38.328 4 W - 创建表：HzsClass(合作社分类)
+14:25:38.328 4 W - Create Table HzsClass(
+	hid int NOT NULL Default 0,
+	sortid int IDENTITY(1,1) NOT NULL,
+	[depth] smallint NULL,
+	[array] int NULL,
+	cname nvarchar(50) NULL,
+	pid int NULL,
+	ispublic smallint NULL,
+	isrose int NULL
+); 
+Alter Table HzsClass Add Constraint PK_HzsClass Primary Key Clustered(hid,sortid)
+14:25:38.328 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'合作社分类' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsClass'
+14:25:38.328 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'主键ID，查询时使用此ID' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsClass', @level2type=N'COLUMN',@level2name=N'hid'
+14:25:38.328 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'序号ID，不使用' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsClass', @level2type=N'COLUMN',@level2name=N'sortid'
+14:25:38.328 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'0:默认公开。   1:不公开' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsClass', @level2type=N'COLUMN',@level2name=N'ispublic'
+14:25:38.328 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'默认0 ' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsClass', @level2type=N'COLUMN',@level2name=N'isrose'
+14:25:38.328 4 W - 创建表：TradeConsult(供求信息咨询表)
+14:25:38.328 4 W - Create Table TradeConsult(
+	title nvarchar(200) NULL,
+	intro nvarchar(1024) NULL,
+	tid int NOT NULL,
+	email nvarchar(100) NULL,
+	tel nvarchar(50) NULL,
+	consultname nvarchar(50) NULL,
+	consultuid int NOT NULL,
+	replyintro nvarchar(1024) NULL,
+	addtime datetime NULL Default getdate(),
+	replytime datetime NULL,
+	replyuid int NOT NULL,
+	ispublic smallint NULL Default 0,
+	consultid bigint IDENTITY(1,1) Primary Key
+)
+14:25:38.328 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'供求信息咨询表' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TradeConsult'
+14:25:38.343 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'供求信息id' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TradeConsult', @level2type=N'COLUMN',@level2name=N'tid'
+14:25:38.359 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'回复人' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TradeConsult', @level2type=N'COLUMN',@level2name=N'consultname'
+14:25:38.359 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'咨询人Id' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TradeConsult', @level2type=N'COLUMN',@level2name=N'consultuid'
+14:25:38.359 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'合作社用户ID 外键' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TradeConsult', @level2type=N'COLUMN',@level2name=N'replyuid'
+14:25:38.359 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'1:不公开。   0:默认公开' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TradeConsult', @level2type=N'COLUMN',@level2name=N'ispublic'
+14:25:38.359 4 W - 创建表：HzsGlory(合作社会员荣誉证书表)
+14:25:38.359 4 W - Create Table HzsGlory(
+	uid int NOT NULL,
+	title nvarchar(100) NOT NULL,
+	intro text NULL,
+	pic nvarchar(200) NULL,
+	isverify smallint NOT NULL Default 10,
+	addtime datetime NOT NULL,
+	id int IDENTITY(1,1) Primary Key
+)
+14:25:38.359 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'合作社会员荣誉证书表' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsGlory'
+14:25:38.359 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'10:审核通过 默认。   20:待审核。   30:未审核。   40:未通过' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'HzsGlory', @level2type=N'COLUMN',@level2name=N'isverify'
+14:25:38.359 4 W - Create Index HzsUser_HzsGlory_r_FK On HzsGlory (uid)
+14:25:38.359 4 W - 创建表：Company(合作社新闻展示表)
+14:25:38.359 4 W - Create Table Company(
+	uid int NOT NULL,
+	typeid smallint NULL,
+	title nvarchar(200) NOT NULL,
+	content ntext NULL,
+	intro ntext NULL,
+	pic nvarchar(200) NULL,
+	pic2 nvarchar(200) NULL,
+	pic3 nvarchar(200) NULL,
+	click bigint NOT NULL Default 0,
+	addtime datetime NOT NULL,
+	id bigint IDENTITY(1,1) Primary Key,
+	isonepage smallint NULL
+)
+14:25:38.359 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'合作社新闻展示表' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Company'
+14:25:38.359 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'默认0' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Company', @level2type=N'COLUMN',@level2name=N'click'
+14:25:38.359 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'是否单页新闻类型 默认0（不是） 例如企业介绍为单页 1：是' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'Company', @level2type=N'COLUMN',@level2name=N'isonepage'
+14:25:38.359 4 W - Create Index HzsUser_Company_r_FK On Company (uid)
+14:25:38.359 4 W - 创建表：AdminUser(管理员用户)
+14:25:38.359 4 W - Create Table AdminUser(
+	utype smallint NOT NULL Default 1,
+	name nvarchar(50) NOT NULL,
+	apwd nvarchar(50) NOT NULL,
+	email nvarchar(100) NULL,
+	isdel smallint NOT NULL Default 0,
+	addtime datetime NOT NULL Default getdate(),
+	adminid int IDENTITY(1,1) Primary Key
+)
+14:25:38.359 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'管理员用户' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'AdminUser'
+14:25:38.359 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'默认1' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'AdminUser', @level2type=N'COLUMN',@level2name=N'utype'
+14:25:38.359 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'管理员名称' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'AdminUser', @level2type=N'COLUMN',@level2name=N'name'
+14:25:38.359 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'账户状态' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'AdminUser', @level2type=N'COLUMN',@level2name=N'isdel'
+14:25:38.359 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'创建时间' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'AdminUser', @level2type=N'COLUMN',@level2name=N'addtime'
+14:25:38.359 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'主键 自增ID' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'AdminUser', @level2type=N'COLUMN',@level2name=N'adminid'
+14:25:38.375 4 W - Create Index IX_AdminUser_email On AdminUser (email)
+14:25:38.375 4 W - Create Index IX_AdminUser_isdel On AdminUser (isdel)
+14:25:38.375 4 W - Create Index IX_AdminUser_name On AdminUser (name)
+14:25:38.375 4 W - 创建表：TradeSort(供求类型表)
+14:25:38.375 4 W - Create Table TradeSort(
+	tid int NOT NULL Default 0,
+	sortid int IDENTITY(1,1) NOT NULL,
+	[depth] smallint NOT NULL,
+	[array] int NOT NULL,
+	sname nvarchar(50) NOT NULL,
+	pid int NOT NULL Default 0,
+	ispublic smallint NULL Default 0,
+	isrose int NULL Default 0
+); 
+Alter Table TradeSort Add Constraint PK_TradeSort Primary Key Clustered(tid,sortid)
+14:25:38.375 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'供求类型表' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TradeSort'
+14:25:38.375 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'主键ID，查询时使用此ID' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TradeSort', @level2type=N'COLUMN',@level2name=N'tid'
+14:25:38.375 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'序号ID，不使用' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TradeSort', @level2type=N'COLUMN',@level2name=N'sortid'
+14:25:38.375 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'查询ID的父ID默认0' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TradeSort', @level2type=N'COLUMN',@level2name=N'pid'
+14:25:38.375 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'0:默认公开。   1:不公开' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TradeSort', @level2type=N'COLUMN',@level2name=N'ispublic'
+14:25:38.375 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'默认0 所以权限' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TradeSort', @level2type=N'COLUMN',@level2name=N'isrose'
+14:25:38.375 4 W - Create Index IX_TradeSort_ispublic On TradeSort (ispublic)
+14:25:38.375 4 W - 创建表：NewsType(新闻类型表)
+14:25:38.375 4 W - Create Table NewsType(
+	ntypeid int NULL,
+	pid int NOT NULL,
+	[array] int NOT NULL,
+	name nvarchar(100) NOT NULL,
+	intro nvarchar(100) NULL,
+	editor nvarchar(50) NULL,
+	isdel smallint NULL Default 0,
+	addtime datetime NULL Default getdate(),
+	ispublic smallint NOT NULL Default 0,
+	id int IDENTITY(1,1) Primary Key
+)
+14:25:38.375 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'新闻类型表' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'NewsType'
+14:25:38.375 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'类型使用的ID' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'NewsType', @level2type=N'COLUMN',@level2name=N'ntypeid'
+14:25:38.375 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'0:默认。   1:删除，实际效果不再页面显示' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'NewsType', @level2type=N'COLUMN',@level2name=N'isdel'
+14:25:38.375 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'0:公开默认。   1:不公开' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'NewsType', @level2type=N'COLUMN',@level2name=N'ispublic'
+14:25:38.375 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'自增排序' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'NewsType', @level2type=N'COLUMN',@level2name=N'id'
+14:25:38.375 4 W - Create Unique Index IX_NewsType_ntypeid On NewsType (ntypeid)
+14:25:38.375 4 W - Create Index IX_NewsType_ispublic On NewsType (ispublic)
+14:25:38.390 4 W - 创建表：PlacesInfo(地方信息)
+14:25:38.390 4 W - Create Table PlacesInfo(
+	title varchar(200) NOT NULL,
+	content text NULL,
+	typeid int NOT NULL,
+	source nvarchar(100) NULL,
+	areacode nvarchar(100) NULL,
+	pic nvarchar(100) NULL,
+	ishot smallint NULL,
+	areaid bigint NOT NULL,
+	isdel smallint NOT NULL Default 0,
+	addtime datetime NOT NULL,
+	adminid int NOT NULL,
+	id int IDENTITY(1,1) Primary Key,
+	intro nvarchar(1000) NULL,
+	click int NULL Default 0,
+	isverify smallint NULL Default 10,
+	editor varchar(50) NULL,
+	seotitle nvarchar(200) NULL,
+	seointro nvarchar(500) NULL,
+	seokeyword nvarchar(300) NULL,
+	htmlpath nvarchar(100) NULL
+)
+14:25:38.390 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'地方信息' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'PlacesInfo'
+14:25:38.390 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'0:默认。   1:删除' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'PlacesInfo', @level2type=N'COLUMN',@level2name=N'isdel'
+14:25:38.390 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'内容简介' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'PlacesInfo', @level2type=N'COLUMN',@level2name=N'intro'
+14:25:38.390 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'点击量' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'PlacesInfo', @level2type=N'COLUMN',@level2name=N'click'
+14:25:38.390 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'10审核 20待审核 40未审核' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'PlacesInfo', @level2type=N'COLUMN',@level2name=N'isverify'
+14:25:38.390 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'静态页地址' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'PlacesInfo', @level2type=N'COLUMN',@level2name=N'htmlpath'
+14:25:38.390 4 W - Create Index IX_PlacesInfo_title On PlacesInfo (title)
+14:25:38.390 4 W - Create Index IX_PlacesInfo_areaid On PlacesInfo (areaid)
+14:25:38.390 4 W - Create Index IX_PlacesInfo_typeid On PlacesInfo (typeid)
+14:25:38.390 4 W - 创建表：NewsInfo(新闻信息表)
+14:25:38.390 4 W - Create Table NewsInfo(
+	id int IDENTITY(1,1) Primary Key,
+	adminid int NULL,
+	title varchar(200) NULL,
+	content ntext NULL,
+	nimg varchar(200) NULL,
+	nvideo varchar(200) NULL,
+	nvideoimg varchar(200) NULL,
+	ishot smallint NULL Default 0,
+	ispublic smallint NULL Default 0,
+	isverify smallint NULL Default 1,
+	editor varchar(50) NULL,
+	addtime datetime NULL Default getdate(),
+	ntypeid int NULL,
+	intro nvarchar(MAX) NULL,
+	click int NULL,
+	seotitle nvarchar(300) NULL,
+	seointro nvarchar(500) NULL,
+	seokeyword nvarchar(300) NULL,
+	htmlpath nvarchar(100) NULL
+)
+14:25:38.390 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'新闻信息表' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'NewsInfo'
+14:25:38.390 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'主键 自增ID' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'NewsInfo', @level2type=N'COLUMN',@level2name=N'adminid'
+14:25:38.406 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'0:默认 否。      推荐类型10 20 30 40 50.....' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'NewsInfo', @level2type=N'COLUMN',@level2name=N'ishot'
+14:25:38.406 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'0:公开默认。   1:不公开' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'NewsInfo', @level2type=N'COLUMN',@level2name=N'ispublic'
+14:25:38.406 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'0:未审核。   1:默认 审核通过' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'NewsInfo', @level2type=N'COLUMN',@level2name=N'isverify'
+14:25:38.406 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'添加时间' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'NewsInfo', @level2type=N'COLUMN',@level2name=N'addtime'
+14:25:38.406 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'新闻类型' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'NewsInfo', @level2type=N'COLUMN',@level2name=N'ntypeid'
+14:25:38.406 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'html' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'NewsInfo', @level2type=N'COLUMN',@level2name=N'htmlpath'
+14:25:38.406 4 W - Create Index IX_NewsInfo_click On NewsInfo (click)
+14:25:38.406 4 W - Create Index IX_NewsInfo_ishot On NewsInfo (ishot)
+14:25:38.406 4 W - Create Index adminuser_news_r_FK On NewsInfo (adminid)
+14:25:38.421 4 W - Create Index IX_NewsInfo_isverify On NewsInfo (isverify)
+14:25:38.421 4 W - Create Index IX_NewsInfo_title On NewsInfo (title)
+14:25:38.421 4 W - 检查连接[hzsweb/SqlServer]的数据库架构耗时00:00:00.2371793
+14:25:38.421 4 W - 一级缓存：关闭缓存
+14:25:38.421 4 W - Select * From HzsArea Order By id Desc
+14:25:55.625 4 W - Select * From HzsArea Order By id Desc
+14:25:55.703 4 W - 初始化HzsModel.Models.TradeSort数据
+14:25:55.718 4 W - Select * From TradeSort Order By sortid Desc
+14:25:56.078 4 W - Select * From TradeSort Order By sortid Desc
+14:25:56.078 4 W - 初始化HzsModel.Models.NewsType数据
+14:25:56.093 4 W - Select * From NewsType Order By id Desc
+14:25:56.421 4 W - Select * From NewsType Order By id Desc
+14:25:56.437 4 W - 初始化HzsModel.Models.HzsClass数据
+14:25:56.437 4 W - Select * From HzsClass Order By sortid Desc
+14:25:56.765 4 W - Select * From HzsClass Order By sortid Desc
+14:40:55.140 20 W - Select * From HzsArea Order By id Desc
+14:40:55.203 20 W - Select * From HzsArea Order By id Desc
+14:40:55.265 20 W - Select * From TradeSort Order By sortid Desc
+14:40:55.265 20 W - Select * From TradeSort Order By sortid Desc
+14:40:55.281 20 W - Select * From NewsType Order By id Desc
+14:40:55.281 20 W - Select * From NewsType Order By id Desc
+14:40:55.281 20 W - Select * From HzsClass Order By sortid Desc
+14:40:55.281 20 W - Select * From HzsClass Order By sortid Desc
+
+#Software: WebDev.WebServer
+#ProcessID: 9988
+#AppDomain: eb4301ba-1-131025904836562500
+#FileName: D:\Program Files\Common Files\Microsoft Shared\DevServer\9.0\WebDev.WebServer.EXE
+#BaseDirectory: E:\vs2008_svn签出\四川泸县数字农经网\HzsCms\HzsWeb\
+#CurrentDirectory: E:\vs2008_svn签出\四川泸县数字农经网\HzsCms
+#CommandLine: /port:12701 /path:"E:\vs2008_svn签出\四川泸县数字农经网\HzsCms\HzsWeb" /vpath:"/"
+#ApplicationType: Web
+#CLR: 2.0.50727.3662
+#OS: Windows Server 2003 Standard Service Pack 2, Administrator/SUNSOFT-821E9FB
+#Date: 2016-03-16
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+16:32:23.546 4 W - NewLife.Core v3.9.2013.0907 Build 2013-09-17 17:48:48
+16:32:23.578 4 W - NewLife.XCode v8.9.2013.0909 Build 2013-09-17 17:58:18
+16:32:23.578 4 W - [hzsweb]GetSchema("MetaDataCollections")
+16:32:23.593 4 W - [hzsweb]GetSchema("ReservedWords")
+16:32:23.625 4 W - [hzsweb]GetSchema("Databases", "sclxnjw")
+16:32:23.656 4 W - [hzsweb]GetSchema("Tables")
+16:32:23.828 4 W - [hzsweb]GetSchema("Columns")
+16:32:23.859 4 W - [hzsweb]GetSchema("Indexes")
+16:32:23.875 4 W - [hzsweb]GetSchema("IndexColumns")
+16:32:23.953 4 W - [hzsweb]GetSchema("DataTypes")
+16:32:24.015 4 W - 初始化HzsModel.Models.AdminUser数据
+16:32:24.015 4 W - 开始检查连接[hzsweb/SqlServer]的数据库架构……
+16:32:24.062 4 W - [hzsweb]的所有实体类（19个）：SysLog,HzsGlory,HzsArea,Trade,NewsType,Link,PlacesInfo,NewsInfo,TradeConsult,HzsAddress,TradeSort,HzsGrade,Company,AdminUser,HzsUser,DM_ZZDW,AdminRole,HzsClass,LoginLog
+16:32:24.062 4 W - [hzsweb]需要检查架构的实体类（19个）：SysLog,HzsGlory,HzsArea,Trade,NewsType,Link,PlacesInfo,NewsInfo,TradeConsult,HzsAddress,TradeSort,HzsGrade,Company,AdminUser,HzsUser,DM_ZZDW,AdminRole,HzsClass,LoginLog
+16:32:24.062 4 W - hzsweb待检查表架构的实体个数：19
+16:32:24.140 4 W - 创建表：DM_ZZDW(组织单位代码)
+16:32:24.156 4 W - Create Table DM_ZZDW(
+	ID int IDENTITY(1,1) Primary Key,
+	ZZDW_DM nvarchar(50) NULL,
+	ZZDW_QC nvarchar(50) NULL,
+	ZZDW_JC nvarchar(50) NULL,
+	ZZDW_SJDM nvarchar(50) NULL,
+	ZZDW_JB int NULL,
+	CJRY nvarchar(50) NULL,
+	CJRQ datetime NULL,
+	XH int NULL
+)
+16:32:24.156 4 W - EXEC dbo.sp_addextendedproperty @name=N'MS_Description', @value=N'组织单位代码' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'DM_ZZDW'
+16:32:24.156 4 W - 检查连接[hzsweb/SqlServer]的数据库架构耗时00:00:00.1450296
+16:32:24.171 4 W - 一级缓存：关闭缓存
+16:32:24.171 4 W - Delete From AdminUser Where name='HIKYUU'
+16:32:24.234 4 W - SET NOCOUNT ON;Insert Into AdminUser(utype, name, apwd, email, isdel, addtime) Values(1, N'HIKYUU', N'auErSOR0b6w=', N'xiukun@163.com', 0, {ts'2016-03-16 16:32:24'});Select SCOPE_IDENTITY()

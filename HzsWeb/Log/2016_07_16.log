@@ -1,0 +1,35 @@
+﻿#Software: WebDev.WebServer
+#ProcessID: 5184
+#AppDomain: eb4301ba-1-131131250621250000
+#FileName: D:\Program Files\Common Files\Microsoft Shared\DevServer\9.0\WebDev.WebServer.EXE
+#BaseDirectory: E:\vs2008_svn签出\四川泸县数字农经网\HzsCms\HzsWeb\
+#CurrentDirectory: D:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE
+#CommandLine: /port:12701 /path:"E:\vs2008_svn签出\四川泸县数字农经网\HzsCms\HzsWeb" /vpath:"/"
+#ApplicationType: Web
+#CLR: 2.0.50727.3662
+#OS: Windows Server 2003 Standard Service Pack 2, Administrator/SUNSOFT-821E9FB
+#Date: 2016-07-16
+#Fields: Time ThreadID IsPoolThread ThreadName Message
+14:44:48.328 19 W - NewLife.Core v3.9.2013.0907 Build 2013-09-17 17:48:48
+14:44:48.359 19 W - NewLife.XCode v8.9.2013.0909 Build 2013-09-17 17:58:18
+14:44:48.359 19 W - [hzsweb]GetSchema("MetaDataCollections")
+14:44:48.453 19 W - [hzsweb]GetSchema("Databases", "sclxnjw")
+14:44:48.531 19 W - [hzsweb]GetSchema("Tables")
+14:44:48.937 19 W - [hzsweb]GetSchema("Columns")
+14:44:49.125 19 W - [hzsweb]GetSchema("Indexes")
+14:44:49.140 19 W - [hzsweb]GetSchema("IndexColumns")
+14:44:49.234 19 W - [hzsweb]GetSchema("DataTypes")
+14:44:49.343 19 W - select rows from sysindexes where id = object_id('AdminUser') and indid in (0,1)
+14:44:49.359 19 W - 初始化HzsModel.Models.AdminUser数据
+14:44:49.375 19 W - 一级缓存：关闭缓存
+14:44:49.406 19 W - [hzsweb]GetSchema("ReservedWords")
+14:44:49.437 19 W - 开始检查连接[hzsweb/SqlServer]的数据库架构……
+14:44:49.484 19 W - [hzsweb]的所有实体类（19个）：SysLog,HzsGlory,HzsArea,Trade,NewsType,Link,PlacesInfo,NewsInfo,TradeConsult,HzsAddress,TradeSort,HzsGrade,Company,AdminUser,HzsUser,DM_ZZDW,AdminRole,HzsClass,LoginLog
+14:44:49.484 19 W - [hzsweb]需要检查架构的实体类（19个）：SysLog,HzsGlory,HzsArea,Trade,NewsType,Link,PlacesInfo,NewsInfo,TradeConsult,HzsAddress,TradeSort,HzsGrade,Company,AdminUser,HzsUser,DM_ZZDW,AdminRole,HzsClass,LoginLog
+14:44:49.484 19 W - hzsweb待检查表架构的实体个数：19
+14:44:49.593 19 W - 检查连接[hzsweb/SqlServer]的数据库架构耗时00:00:00.1463915
+14:44:49.593 19 W - Select * From AdminUser Order By adminid Desc
+14:44:49.656 19 W - 初始化HzsModel.Models.LoginLog数据
+14:44:49.671 19 W - SET NOCOUNT ON;Insert Into LoginLog(adminid, adminname, remark, logintime, loginip, ltype, islogin) Values(2, N'admin', N'成功.', {ts'2016-07-16 14:44:49'}, N'127.0.0.1', 1, 0);Select SCOPE_IDENTITY()
+14:44:50.078 19 W - select top 2 * from LoginLog where islogin=0 and ltype =1 order by id desc
+14:56:12.984 19 W - select top 2 * from LoginLog where islogin=0 and ltype =1 order by id desc

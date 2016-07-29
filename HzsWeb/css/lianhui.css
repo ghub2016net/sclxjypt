@@ -1,0 +1,107 @@
+﻿/*联会左侧新闻*/
+.lhmainNewsL{
+	background:url(../images/newsLbg.jpg) no-repeat top;
+	width:244px;
+	float:left;
+	height:207px;
+	}
+.lhmainLNews{
+	background:#f6fffc;
+    margin:0 auto; 
+	width:242px; 
+	height:189px; 
+	overflow:hidden;
+	padding-top:11px;
+	border-bottom:1px solid #cee3c4;
+	border-left:1px solid #cee3c4;
+	border-right:1px solid #cee3c4;
+	}
+.lhmainLNews ul{ 
+    margin:0 auto;
+    width:241px; 
+	height:175px; 
+	overflow:hidden;
+	}
+.lhmainLNews ul li{ 
+    float:left; 
+	width:220px; 
+	height:26px; 
+	line-height:26px; 
+	text-align:left; 
+	overflow:hidden;
+	}
+.lhmainLNews ul li a{ 
+    float:left; 
+	width:220px; 
+	height:26px; 
+	line-height:26px; 
+	text-align:left; 
+	margin-left:12px; 
+	overflow:hidden;
+	}	
+/*右侧新闻*/	
+.mainNews2{
+	background:url(../images/newsbgR.jpg) no-repeat top center;
+	width:367px;
+	float:left;
+	height:230px;
+	border:1px solid #bee2bc;
+	}
+.mainLNews2{
+    margin:0 auto; 
+	width:358px; 
+	height:200px; 
+	overflow:hidden;
+	padding-top:7px;
+	}
+.mainLNews2 ul{ 
+    margin:0 auto;
+    width:350px; 
+	height:255px; 
+	overflow:hidden;
+	}
+.mainLNews2 ul li{ 
+    float:left; 
+	width:350px; 
+	height:26px; 
+	line-height:26px; 
+	text-align:left; 
+	background:url(../images/icoNews.jpg) left center no-repeat;
+	overflow:hidden;
+	}
+.mainLNews2 ul li a{ 
+    float:left; 
+	width:220px; 
+	height:26px; 
+	line-height:26px; 
+	text-align:left; 
+	margin-left:8px; 
+	overflow:hidden;
+	}
+/*联会简介*/	
+.lhmainTable{
+	margin:0 auto; 
+	width:340px; 
+	table-layout:fixed; 
+	border-collapse:collapse;
+	}
+.lhmainTable tr th {
+	height:32px; 
+	line-height:22px; 
+	text-align:center; 
+	border-collapse:collapse; 
+	border-bottom:1px solid #dcdcdc; 
+	vertical-align:middle; 
+	word-wrap:break-word; 
+	font-weight:bold; 
+	color:#009800;
+	font-size:14px;
+	}
+.lhmainTable tr td {
+	height:27px; 
+	line-height:22px; 
+	text-align:center; 
+	border-collapse:collapse; 
+	vertical-align:middle; 
+	word-wrap: break-word;
+	}
